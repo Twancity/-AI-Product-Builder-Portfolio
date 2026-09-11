@@ -10,7 +10,7 @@ Help patients understand and follow clinician-approved discharge instructions wh
 
 ```mermaid
 flowchart LR
-    A["NOW<br/>Foundation + Safe MVP<br/><br/>Define boundaries<br/>Grounded explanations<br/>Teach-back<br/>Human escalation"] --> B["NEXT<br/>Build + Validate<br/><br/>Agent tools<br/>Working prototype<br/>Evaluation dataset<br/>Failure testing"]
+    A["NOW<br/>Foundation + Safe MVP<br/><br/>PRD + boundaries<br/>Grounded explanations<br/>Teach-back<br/>Human escalation"] --> B["NEXT<br/>Build + Validate<br/><br/>Agent tools<br/>Working prototype<br/>Evaluation dataset<br/>Failure testing"]
     B --> C["LATER<br/>Enhance + Scale<br/><br/>Accessibility<br/>Approved languages<br/>Portal integration<br/>Continuous monitoring"]
 ```
 
@@ -22,6 +22,7 @@ flowchart LR
 | AI Product Principles | Complete | Source-of-truth, human responsibility, and safety boundaries |
 | AI Output Evaluation | Complete | Groundedness, completeness, clarity, and safety evaluation |
 | Product Roadmap | Current | Prioritization, dependencies, validation gates, and future vision |
+| Product Requirements Document | Complete | Goals, scope, requirements, user stories, risks, metrics, and acceptance criteria |
 | Agent Boundary | Planned | Authorized actions, prohibited actions, and stopping conditions |
 | Working Prototype | Planned | Bounded agent workflow using synthetic data |
 | Evaluation Report | Planned | Test cases, failure analysis, and go/no-go recommendation |
