@@ -8,7 +8,7 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
-| **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
+| **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
 | **[CareBridge AI](02-CareBridge-AI/)** | **AI product case study — concept stage** | Responsible AI boundaries, healthcare workflow design, AI output evaluation, human-in-the-loop escalation, product requirements, and governance thinking |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
@@ -26,6 +26,7 @@ Stash is a mobile-first web application that helps people record where household
 
 ### Product evidence
 
+- **[Live Product](https://stash-home-inventory.lovable.app)**
 - **[Repository](https://github.com/Twancity/item-stash)**
 - **[Product Requirements Document](https://github.com/Twancity/item-stash/blob/main/PRD.md)**
 - **[Product Roadmap](https://github.com/Twancity/item-stash/blob/main/docs/ROADMAP.md)**
