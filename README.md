@@ -9,7 +9,7 @@ This portfolio is designed to show how I move from a user problem to a defined M
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
-| **[CareBridge AI](02-CareBridge-AI/)** | **AI product case study — concept stage** | Responsible AI boundaries, healthcare workflow design, AI output evaluation, human-in-the-loop escalation, product requirements, and governance thinking |
+| **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype — verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
 ## 1. Stash — Working Product
@@ -34,9 +34,9 @@ Stash is a mobile-first web application that helps people record where household
 
 The shipped releases were manually validated against defined acceptance criteria: V1 **10/10**, V1.1 **10/10**, and V1.2 **14/14**. These are acceptance-test results, not user-adoption or business-outcome claims.
 
-## 2. CareBridge AI — Responsible AI Product Case Study
+## 2. CareBridge AI — Responsible AI Product Case Study and Prototype
 
-CareBridge AI is a concept-stage Patient Discharge Guidance Agent designed to help patients understand clinician-approved discharge instructions while keeping clinical judgment with licensed professionals.
+CareBridge AI began as a concept-stage Patient Discharge Guidance Agent and now includes a working, unpublished portfolio prototype. It helps visitors explore fictional discharge instructions while keeping clinical judgment, real messaging, and real patient data outside the prototype.
 
 ### Product artifacts
 
@@ -45,10 +45,12 @@ CareBridge AI is a concept-stage Patient Discharge Guidance Agent designed to he
 3. [AI Output Evaluation](02-CareBridge-AI/03-AI-Output-Evaluation.md)
 4. [Visual Product Roadmap](02-CareBridge-AI/04-Product-Roadmap.md)
 5. [Product Requirements Document](02-CareBridge-AI/05-Product-Requirements-Document.md)
+6. [Working Prototype Source and Documentation](02-CareBridge-AI/prototype/artifacts/carebridge/README.md)
+7. [Prototype Case Study](02-CareBridge-AI/prototype/artifacts/carebridge/CASE_STUDY.md)
 
-The case study is progressively adding agent boundaries, tool contracts, workflow architecture, a working prototype, evaluation cases, governance controls, and a capstone case study.
+The implemented prototype demonstrates exact-source retrieval, bounded rule-based Q&A, grounded explanation safeguards, simulated clarification handoff/status, and optional teach-back for one fictional walker instruction. Recorded verification includes **25/25 teach-back**, **23/23 handoff/status**, and **24/24 browser interaction** checks, with the existing Q&A, grounding, and diagnostic/privacy suites passing.
 
-> CareBridge AI uses synthetic or properly de-identified scenarios. It does not represent a deployed clinical product or achieved clinical outcomes.
+> CareBridge AI uses fictional data only. It is not published or deployed for clinical use, does not contact real clinicians or systems, and does not represent achieved clinical outcomes.
 
 ## What This Portfolio Demonstrates
 

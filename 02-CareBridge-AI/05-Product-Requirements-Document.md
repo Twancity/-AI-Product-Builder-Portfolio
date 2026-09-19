@@ -1,12 +1,29 @@
 # CareBridge AI — Product Requirements Document
 
-**Version:** 0.1  
-**Status:** Concept-stage portfolio PRD  
+**Version:** 0.2
+**Status:** Reconciled with completed fictional-data portfolio prototype; unpublished
 **Product:** CareBridge AI — Patient Discharge Guidance Agent  
 **Owner role:** Product Management  
 **Last updated:** September 2026
 
-> This PRD describes a proposed portfolio prototype using synthetic or properly de-identified scenarios. It does not represent a deployed clinical product, verified clinical outcomes, or professional AI implementation experience.
+> This PRD preserves the original product concept and records how a narrower fictional-data prototype was implemented. It does not represent a deployed clinical product, verified clinical outcomes, or professional clinical implementation experience.
+
+## Implementation Status
+
+The completed portfolio prototype implements a deliberately narrower subset of this PRD:
+
+| Area | Implemented prototype |
+|---|---|
+| Source retrieval | Exact retrieval from server-owned fictional discharge plans, including explicit missing-data behavior |
+| Questions | Narrow deterministic Q&A with evidence and unsupported/unsafe fallbacks |
+| AI explanation | Grounded Gemini pathway with deterministic pre-checks, server-owned source identity, post-generation validation, and transparent provider failures |
+| Clarification | Simulated handoff delivery/status, retry and idempotency, compact session audit, and fixed authored response fixtures |
+| Teach-back | Optional three-fact assessment for one fictional walker instruction, deterministic safety rules, bounded meaning classification, one retry, fixed feedback, and no raw-response retention |
+| Data and operations | Fictional data, process/session-scoped state, no real clinical system, no real clinician contact, and no deployment |
+
+Recorded verification includes **25/25 teach-back**, **23/23 handoff/status**, and **24/24 browser interaction** checks. Existing **11/11 rule-Q&A**, **17/17 simulated grounding**, and **7/7 diagnostic/privacy** checks also pass.
+
+Authentication, patient-selected reminders, real reviewer identity, durable governed audit storage, real clinical messaging, production integrations, operational monitoring, and clinical validation remain outside the implemented prototype. The finished source and detailed evidence are available in [`prototype/`](./prototype/artifacts/carebridge/README.md).
 
 ## 1. Executive Summary
 

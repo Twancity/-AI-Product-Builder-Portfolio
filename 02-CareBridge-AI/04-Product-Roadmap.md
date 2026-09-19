@@ -1,6 +1,20 @@
 # CareBridge AI — Agent Product Roadmap
 
-> **Portfolio status:** Concept and prototype work using synthetic or properly de-identified scenarios. This does not represent a deployed clinical system or achieved clinical outcomes.
+> **Portfolio status:** A bounded fictional-data prototype is implemented and verified but remains unpublished. This does not represent a deployed clinical system or achieved clinical outcomes.
+
+## Implemented prototype snapshot
+
+The original roadmap below is preserved as the product-planning artifact. The completed portfolio prototype implements a narrower, safety-bounded subset:
+
+- Exact-source retrieval with explicit missing-data behavior
+- Narrow rule-based Q&A with source evidence
+- Grounded Gemini explanation workflow with deterministic refusal and post-generation validation
+- Simulated clarification handoff, delivery/status states, retry/idempotency, compact audit history, and authored response fixtures
+- Optional teach-back with deterministic safety rules, bounded meaning classification, one retry, fixed feedback, explicit simulated handoff, and no raw-response retention
+
+Recorded verification: **25/25 teach-back**, **23/23 handoff/status**, and **24/24 browser interaction** checks. Existing **11/11 rule-Q&A**, **17/17 simulated grounding**, and **7/7 diagnostic/privacy** checks also pass.
+
+The prototype uses fictional data only and remains unpublished. Authentication, reminders, real clinical messaging, durable governed audit storage, production integrations, and operational monitoring remain future work.
 
 ## Product vision
 
@@ -21,11 +35,11 @@ flowchart LR
 | Problem Discovery | Complete | User problem, target population, assumptions, and opportunity |
 | AI Product Principles | Complete | Source-of-truth, human responsibility, and safety boundaries |
 | AI Output Evaluation | Complete | Groundedness, completeness, clarity, and safety evaluation |
-| Product Roadmap | Current | Prioritization, dependencies, validation gates, and future vision |
-| Product Requirements Document | Complete | Goals, scope, requirements, user stories, risks, metrics, and acceptance criteria |
-| Agent Boundary | Planned | Authorized actions, prohibited actions, and stopping conditions |
-| Working Prototype | Planned | Bounded agent workflow using synthetic data |
-| Evaluation Report | Planned | Test cases, failure analysis, and go/no-go recommendation |
+| Product Roadmap | Current | Prioritization, dependencies, validation gates, implemented scope, and future vision |
+| Product Requirements Document | Reconciled | Original product intent plus implemented prototype scope and remaining gaps |
+| Agent Boundary | Implemented for prototype | Authorized actions, prohibited actions, deterministic stops, and simulated escalation |
+| Working Prototype | Complete, unpublished | Bounded workflow using fictional data |
+| Evaluation Report | Complete for recorded prototype scope | Synthetic checks, bounded live cases, failure analysis, and limitations |
 
 ## NOW — Foundation and safe MVP
 
