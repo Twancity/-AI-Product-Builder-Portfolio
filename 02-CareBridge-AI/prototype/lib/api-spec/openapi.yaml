@@ -1,0 +1,517 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: carebridge
+    description: CareBridge synthetic-plan explanation operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /carebridge/explanations:
+    post:
+      operationId: createCareBridgeExplanation
+      tags: [carebridge]
+      summary: Explain one selected synthetic discharge instruction
+      description: Uses server-owned fictional source content. Returns a transparent unavailable or safety result when Gemini is not configured or the request is unsupported.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CareBridgeExplanationInput"
+      responses:
+        "200":
+          description: Explanation result, including unavailable and safety fallbacks
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareBridgeExplanationResult"
+        "400":
+          description: Invalid request
+        "429":
+          description: Usage limit reached
+  /carebridge/handoffs:
+    get:
+      operationId: listCareBridgeHandoffs
+      tags: [carebridge]
+      summary: List compact simulated handoff history for one browser session and fictional patient
+      parameters:
+        - in: query
+          name: sessionId
+          required: true
+          schema: { type: string, minLength: 8, maxLength: 80 }
+        - in: query
+          name: patientId
+          required: true
+          schema: { type: string, maxLength: 20 }
+      responses:
+        "200":
+          description: Session and patient-scoped demo handoff history
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareBridgeHandoffHistory"
+        "400":
+          description: Invalid request
+    post:
+      operationId: createCareBridgeHandoff
+      tags: [carebridge]
+      summary: Create or retry a simulated review-queue delivery
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CareBridgeHandoffInput"
+      responses:
+        "200":
+          description: Simulated delivery outcome and compact audit
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareBridgeHandoffResult"
+        "400":
+          description: Invalid request
+  /carebridge/handoffs/{reviewRequestId}/status:
+    post:
+      operationId: updateCareBridgeHandoffStatus
+      tags: [carebridge]
+      summary: Manually simulate reviewer acknowledgement or authored response availability
+      parameters:
+        - in: path
+          name: reviewRequestId
+          required: true
+          schema: { type: string, maxLength: 80 }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CareBridgeHandoffStatusInput"
+      responses:
+        "200":
+          description: Updated simulated request status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareBridgeHandoffResult"
+        "400":
+          description: Invalid or unsafe transition
+  /carebridge/teach-back:
+    get:
+      operationId: getCareBridgeTeachBack
+      tags: [carebridge]
+      summary: Get the bounded teach-back state for one browser session and synthetic source
+      parameters:
+        - in: query
+          name: sessionId
+          required: true
+          schema: { type: string, minLength: 8, maxLength: 80 }
+        - in: query
+          name: patientId
+          required: true
+          schema: { type: string, maxLength: 20 }
+        - in: query
+          name: sectionId
+          required: true
+          schema: { type: string, maxLength: 40 }
+        - in: query
+          name: sourceVersion
+          required: true
+          schema: { type: string, maxLength: 40 }
+      responses:
+        "200":
+          description: Session and source-scoped teach-back state
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareBridgeTeachBackHistory"
+        "400":
+          description: Invalid request
+    post:
+      operationId: createCareBridgeTeachBackAssessment
+      tags: [carebridge]
+      summary: Assess one bounded synthetic teach-back response
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CareBridgeTeachBackInput"
+      responses:
+        "200":
+          description: Source-linked comprehension feedback
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareBridgeTeachBackResult"
+        "400":
+          description: Invalid request
+        "429":
+          description: Usage limit reached
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    CareBridgeExplanationInput:
+      type: object
+      additionalProperties: false
+      properties:
+        patientId:
+          type: string
+          maxLength: 20
+        sectionId:
+          type: string
+          maxLength: 40
+        question:
+          type: string
+          minLength: 1
+          maxLength: 150
+      required:
+        - patientId
+        - sectionId
+        - question
+    CareBridgeSourceEvidence:
+      type: object
+      additionalProperties: false
+      properties:
+        patientName:
+          type: string
+        documentTitle:
+          type: string
+        sectionTitle:
+          type: string
+        version:
+          type: string
+        simulatedApprovalDate:
+          type: string
+          format: date-time
+        exactInstruction:
+          type: string
+        sourceType:
+          type: string
+          enum: [synthetic_demo_source]
+      required:
+        - patientName
+        - documentTitle
+        - sectionTitle
+        - version
+        - simulatedApprovalDate
+        - exactInstruction
+        - sourceType
+    CareBridgeExplanationResult:
+      type: object
+      additionalProperties: false
+      properties:
+        status:
+          type: string
+          enum: [success, not_configured, unsupported, error]
+        code:
+          type: string
+          enum:
+            - explanation_ready
+            - missing_credentials
+            - model_not_configured
+            - unsupported_request
+            - authentication_error
+            - timeout
+            - rate_limited
+            - malformed_response
+            - source_mismatch
+            - unsupported_addition
+            - provider_error
+        message:
+          type: string
+        explanation:
+          type: [string, "null"]
+        source:
+          oneOf:
+            - $ref: "#/components/schemas/CareBridgeSourceEvidence"
+            - type: "null"
+        retryable:
+          type: boolean
+        attempts:
+          type: integer
+          minimum: 0
+          maximum: 2
+        provider:
+          type: string
+          enum: [gemini_user_key]
+        liveModelVerified:
+          type: boolean
+        handoffNotice:
+          type: string
+      required:
+        - status
+        - code
+        - message
+        - explanation
+        - source
+        - retryable
+        - attempts
+        - provider
+        - liveModelVerified
+        - handoffNotice
+    CareBridgeHandoffInput:
+      type: object
+      additionalProperties: false
+      required: [sessionId, idempotencyKey, patientId, question, demoScenario]
+      properties:
+        sessionId:
+          type: string
+          minLength: 8
+          maxLength: 80
+        idempotencyKey:
+          type: string
+          minLength: 8
+          maxLength: 80
+        patientId:
+          type: string
+          maxLength: 20
+        question:
+          type: string
+          minLength: 1
+          maxLength: 150
+        demoScenario:
+          type: string
+          enum: [delivered, failed, unconfirmed]
+        reviewRequestId:
+          type: [string, "null"]
+          maxLength: 80
+        origin:
+          type: string
+          enum: [unsupported_question, teach_back_confusion]
+        sectionId:
+          type: [string, "null"]
+          maxLength: 40
+          description: Required for teach_back_confusion and bound to the current synthetic source
+        sourceVersion:
+          type: [string, "null"]
+          maxLength: 40
+          description: Required for teach_back_confusion and must match the current synthetic source
+    CareBridgeHandoffAuditEvent:
+      type: object
+      additionalProperties: false
+      required: [timestamp, status, reason, attemptId, sourceReference, sourceVersion]
+      properties:
+        timestamp: { type: string, format: date-time }
+        status:
+          type: string
+          enum: [attempted, accepted, delivered, failed, unconfirmed, reviewer_acknowledged, response_available, clarification_required]
+        reason: { type: string }
+        attemptId: { type: string }
+        sourceReference: { type: string }
+        sourceVersion: { type: string }
+    CareBridgeHandoffResult:
+      type: object
+      additionalProperties: false
+      required:
+        - reviewRequestId
+        - attemptId
+        - queueRequestId
+        - destination
+        - status
+        - deliveryConfirmed
+        - message
+        - noRealClinicianNotice
+        - alternativeGuidance
+        - retryable
+        - attempts
+        - stopReason
+        - question
+        - patientName
+        - sourceReference
+        - sourceVersion
+        - evidenceNote
+        - createdAt
+        - updatedAt
+        - reviewStatus
+        - nextAction
+        - demoResponse
+        - responseFixtureVersion
+        - responseApplicability
+        - audit
+      properties:
+        reviewRequestId: { type: string }
+        attemptId: { type: string }
+        queueRequestId: { type: [string, "null"] }
+        destination: { type: string }
+        status:
+          type: string
+          enum: [delivered, failed, unconfirmed]
+        deliveryConfirmed: { type: boolean }
+        message: { type: string }
+        noRealClinicianNotice: { type: string }
+        alternativeGuidance: { type: string }
+        retryable: { type: boolean }
+        attempts: { type: integer, minimum: 1, maximum: 2 }
+        stopReason:
+          type: string
+          enum: [missing_guidance, ambiguous_guidance, conflicting_guidance, diagnosis_or_treatment_change]
+        question: { type: string }
+        patientName: { type: string }
+        sourceReference: { type: string }
+        sourceVersion: { type: string }
+        evidenceNote: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        reviewStatus:
+          type: string
+          enum: [delivery_not_confirmed, awaiting_review, acknowledged, response_available, clarification_required]
+        nextAction: { type: string }
+        demoResponse:
+          oneOf:
+            - $ref: "#/components/schemas/CareBridgeDemoResponse"
+            - type: "null"
+        responseFixtureVersion:
+          type: [string, "null"]
+        responseApplicability:
+          type: string
+          enum: [not_requested, current, superseded, unverified]
+        audit:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareBridgeHandoffAuditEvent"
+    CareBridgeHandoffHistory:
+      type: object
+      additionalProperties: false
+      required: [items, retentionNotice]
+      properties:
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareBridgeHandoffResult"
+        retentionNotice:
+          type: string
+    CareBridgeDemoResponse:
+      type: object
+      additionalProperties: false
+      required: [text, approvalLabel, sourceVersion, applicabilityStatus, notice]
+      properties:
+        text: { type: string }
+        approvalLabel: { type: string }
+        sourceVersion: { type: string }
+        applicabilityStatus:
+          type: string
+          enum: [current]
+        notice: { type: string }
+    CareBridgeHandoffStatusInput:
+      type: object
+      additionalProperties: false
+      required: [sessionId, patientId, idempotencyKey, action]
+      properties:
+        sessionId: { type: string, minLength: 8, maxLength: 80 }
+        patientId: { type: string, maxLength: 20 }
+        idempotencyKey: { type: string, minLength: 8, maxLength: 80 }
+        action:
+          type: string
+          enum: [acknowledge, make_response_available]
+        responseFixture:
+          type: [string, "null"]
+          enum: [current, superseded, unverified, null]
+    CareBridgeTeachBackInput:
+      type: object
+      additionalProperties: false
+      required: [sessionId, idempotencyKey, patientId, sectionId, sourceVersion, answer]
+      properties:
+        sessionId: { type: string, minLength: 8, maxLength: 80 }
+        idempotencyKey: { type: string, minLength: 8, maxLength: 80 }
+        patientId: { type: string, maxLength: 20 }
+        sectionId: { type: string, maxLength: 40 }
+        sourceVersion: { type: string, maxLength: 40 }
+        answer: { type: string, minLength: 1, maxLength: 300 }
+    CareBridgeTeachBackAuditEvent:
+      type: object
+      additionalProperties: false
+      required: [timestamp, outcome, comprehensionAttempt, providerAttempts, sourceReference, sourceVersion, assessmentSource]
+      properties:
+        timestamp: { type: string, format: date-time }
+        outcome:
+          type: string
+          enum: [complete, incomplete, unclear, contradictory, provider_error, source_mismatch]
+        comprehensionAttempt: { type: integer, minimum: 0, maximum: 2 }
+        providerAttempts: { type: integer, minimum: 0, maximum: 2 }
+        sourceReference: { type: string }
+        sourceVersion: { type: string }
+        assessmentSource:
+          type: string
+          enum: [fixed_safety_rules, simulated_provider, gemini_live]
+    CareBridgeTeachBackResult:
+      type: object
+      additionalProperties: false
+      required:
+        - activityId
+        - patientId
+        - sectionId
+        - sourceVersion
+        - originalInstruction
+        - outcome
+        - feedback
+        - comprehensionAttempts
+        - retryAvailable
+        - handoffAvailable
+        - providerAttempts
+        - assessmentSource
+        - liveModelVerified
+        - updatedAt
+        - audit
+        - retentionNotice
+      properties:
+        activityId: { type: string }
+        patientId: { type: string }
+        sectionId: { type: string }
+        sourceVersion: { type: string }
+        originalInstruction: { type: string }
+        outcome:
+          type: string
+          enum: [complete, incomplete, unclear, contradictory, provider_error, source_mismatch]
+        feedback: { type: string }
+        comprehensionAttempts: { type: integer, minimum: 0, maximum: 2 }
+        retryAvailable: { type: boolean }
+        handoffAvailable: { type: boolean }
+        providerAttempts: { type: integer, minimum: 0, maximum: 2 }
+        assessmentSource:
+          type: string
+          enum: [fixed_safety_rules, simulated_provider, gemini_live]
+        liveModelVerified: { type: boolean }
+        updatedAt: { type: string, format: date-time }
+        audit:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareBridgeTeachBackAuditEvent"
+        retentionNotice: { type: string }
+    CareBridgeTeachBackHistory:
+      type: object
+      additionalProperties: false
+      required: [activity, retentionNotice]
+      properties:
+        activity:
+          oneOf:
+            - $ref: "#/components/schemas/CareBridgeTeachBackResult"
+            - type: "null"
+        retentionNotice: { type: string }
+
