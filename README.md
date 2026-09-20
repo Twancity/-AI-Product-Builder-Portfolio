@@ -9,6 +9,7 @@ This portfolio is designed to show how I move from a user problem to a defined M
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
+| **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product — V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
 | **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype — verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
@@ -34,7 +35,35 @@ Stash is a mobile-first web application that helps people record where household
 
 The shipped releases were manually validated against defined acceptance criteria: V1 **10/10**, V1.1 **10/10**, and V1.2 **14/14**. These are acceptance-test results, not user-adoption or business-outcome claims.
 
-## 2. CareBridge AI — Responsible AI Product Case Study and Prototype
+## 2. StudySteps — Multimodal AI Learning and Planning Product
+
+**Tagline:** *Turn confusing schoolwork into clear next steps.*
+
+StudySteps is a multimodal AI study assistant designed to help students understand schoolwork, work through problems without immediately receiving the answer, explore project directions, build editable plans, and remember what still needs to be turned in.
+
+### Product progression
+
+- **Concept help:** Grade-aware explanations, worked examples, guided practice, hints, answer checking, and explicit answer reveal.
+- **Worksheet/problem help:** Photo understanding, editable extraction review, skill identification, method-first guidance, and teach-before-answer controls.
+- **Project Launchpad:** **Understand → Explore → Choose → Plan → Build → Track** rather than a generic checklist.
+- **Accessibility:** Text, photo, drag-and-drop, voice input, and Read to Me.
+- **Done & Due:** Separates work completion from actual submission and retains turned-in work for 30 days before cleanup.
+
+### Product evidence
+
+- **[Repository and Visual Walkthrough](https://github.com/Twancity/studysteps)**
+- **[Product Case Study](https://github.com/Twancity/studysteps/blob/main/docs/PRODUCT_CASE_STUDY.md)**
+- **[Product Requirements Document](https://github.com/Twancity/studysteps/blob/main/PRD.md)**
+- **[Acceptance Testing](https://github.com/Twancity/studysteps/blob/main/docs/TESTING.md)**
+- **[AI Guardrails](https://github.com/Twancity/studysteps/blob/main/docs/AI_GUARDRAILS.md)**
+- **[Decision Log](https://github.com/Twancity/studysteps/blob/main/docs/DECISION_LOG.md)**
+- **[Demo Guide](https://github.com/Twancity/studysteps/blob/main/docs/DEMO_GUIDE.md)**
+
+A key product lesson from V1 was that **technically valid AI output is not the same as useful learning support**. Manual testing exposed generic responses and an early photo-preview-only implementation. Those failures drove the product toward separate concept/problem/project experiences, grounded multimodal input, teach-before-answer, student-controlled answer reveal, and explicit human review.
+
+> StudySteps is a portfolio product build. V1 evidence is limited to implemented functionality, manual acceptance testing, responsive review, API/build checks, and documented product decisions; it does not claim public adoption or measured learning outcomes.
+
+## 3. CareBridge AI — Responsible AI Product Case Study and Prototype
 
 CareBridge AI began as a concept-stage Patient Discharge Guidance Agent and now includes a working, unpublished portfolio prototype. It helps visitors explore fictional discharge instructions while keeping clinical judgment, real messaging, and real patient data outside the prototype.
 
