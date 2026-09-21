@@ -11,6 +11,7 @@ This portfolio is designed to show how I move from a user problem to a defined M
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
 | **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product — V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
 | **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype — verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
+| **[ProductTrace AI](03-ProductTrace-AI/)** | **Working AI decision-system prototype — V1 governance checkpoint** | Evidence traceability, live AI synthesis, PM decision controls, real AI evals, experiment governance, launch gates, instrumentation planning, and measurable iteration |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
 ## 1. Stash — Working Product
@@ -81,6 +82,26 @@ The implemented prototype demonstrates exact-source retrieval, bounded rule-base
 
 > CareBridge AI uses fictional data only. It is not published or deployed for clinical use, does not contact real clinicians or systems, and does not represent achieved clinical outcomes.
 
+## 4. ProductTrace AI — Evidence-to-Decision Product System
+
+**Tagline:** *From customer signal to product decision — with the evidence attached.*
+
+ProductTrace is an AI-assisted PM decision system that connects raw evidence to themes, opportunities, experiments, evaluations, and launch decisions while preserving explicit human control.
+
+### Product evidence
+
+- **[ProductTrace Project Overview](03-ProductTrace-AI/README.md)**
+- **[Product Requirements Document](03-ProductTrace-AI/02-Product-Requirements-Document.md)**
+- **[AI Evaluation and Governance](03-ProductTrace-AI/03-AI-Evaluation-and-Governance.md)**
+- **[Build Retrospective](03-ProductTrace-AI/04-Build-Retrospective.md)**
+- **[Product Roadmap](03-ProductTrace-AI/05-Product-Roadmap.md)**
+
+Two genuine live evaluation runs are preserved. The first scored **65% overall**, exposing taxonomy, grounding, and evaluation-design defects. After root-cause analysis and corrective product changes—without lowering governance thresholds—the second run reached **95% overall**, **95% classification accuracy**, and **100% evidence grounding**, with **0 execution errors**, **0 unsupported recommendations**, and **0 critical failures**.
+
+The build intentionally preserves the failed first run and the decisions that followed it. ProductTrace is therefore presented as evidence of **PM iteration, AI evaluation, governance, and measurable product improvement**, not as a claim that the first implementation was production-ready.
+
+> ProductTrace is a portfolio prototype. Its current evidence demonstrates implemented workflow behavior, live AI evaluation, and documented governance decisions; it does not claim market adoption or production business outcomes.
+
 ## What This Portfolio Demonstrates
 
 - **Product discovery:** Define the user problem before selecting the solution.
@@ -102,4 +123,4 @@ The objective is not to showcase code volume. It is to demonstrate **product rea
 
 ## Current Focus
 
-Future projects will continue expanding the portfolio into **agentic AI, AI evaluation, governance, IAM/identity, workflow automation, and practical product-building** while maintaining the same evidence-based PM standard.
+Current work is expanding ProductTrace into **instrumentation readiness and Market Intelligence**, while future projects will continue exploring agentic AI, AI evaluation, governance, IAM/identity, workflow automation, and practical product-building under the same evidence-based PM standard.
