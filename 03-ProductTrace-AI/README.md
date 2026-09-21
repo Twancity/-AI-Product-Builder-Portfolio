@@ -59,6 +59,7 @@ The second run improved the overall pass rate by **30 percentage points** withou
 4. [Build Retrospective](04-Build-Retrospective.md)
 5. [Product Roadmap](05-Product-Roadmap.md)
 6. [Instrumentation Plan](06-Instrumentation-Plan.md)
+7. [Instrumentation Validation](07-Instrumentation-Validation.md)
 
 ## Prototype
 
