@@ -58,6 +58,7 @@ The second run improved the overall pass rate by **30 percentage points** withou
 3. [AI Evaluation and Governance](03-AI-Evaluation-and-Governance.md)
 4. [Build Retrospective](04-Build-Retrospective.md)
 5. [Product Roadmap](05-Product-Roadmap.md)
+6. [Instrumentation Plan](06-Instrumentation-Plan.md)
 
 ## Prototype
 
