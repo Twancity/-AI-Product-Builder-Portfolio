@@ -11,7 +11,7 @@ This portfolio is designed to show how I move from a user problem to a defined M
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
 | **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product — V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
 | **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype — verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
-| **[ProductTrace AI](03-ProductTrace-AI/)** | **Working AI decision-system prototype — V1 governance checkpoint** | Evidence traceability, live AI synthesis, PM decision controls, real AI evals, experiment governance, launch gates, instrumentation planning, and measurable iteration |
+| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone — development frozen** | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
 ## 1. Stash — Working Product
@@ -86,21 +86,29 @@ The implemented prototype demonstrates exact-source retrieval, bounded rule-base
 
 **Tagline:** *From customer signal to product decision — with the evidence attached.*
 
-ProductTrace is an AI-assisted PM decision system that connects raw evidence to themes, opportunities, experiments, evaluations, and launch decisions while preserving explicit human control.
+ProductTrace is the portfolio's final major capstone: an AI-assisted product-management system that connects customer evidence, external market research, AI synthesis, structured discovery, experiments, evaluation, and launch decisions while preserving explicit PM authority.
 
-### Product evidence
+### Capstone evidence
 
 - **[ProductTrace Project Overview](03-ProductTrace-AI/README.md)**
-- **[Product Requirements Document](03-ProductTrace-AI/02-Product-Requirements-Document.md)**
-- **[AI Evaluation and Governance](03-ProductTrace-AI/03-AI-Evaluation-and-Governance.md)**
-- **[Build Retrospective](03-ProductTrace-AI/04-Build-Retrospective.md)**
-- **[Product Roadmap](03-ProductTrace-AI/05-Product-Roadmap.md)**
+- **[Final Portfolio Case Study](03-ProductTrace-AI/20-Final-Portfolio-Case-Study.md)**
+- **[Final Architecture & Workflow](03-ProductTrace-AI/14-Final-Architecture-and-Workflow.md)**
+- **[First Live Discovery Case](03-ProductTrace-AI/13-First-Live-Discovery-Case.md)**
+- **[Development Freeze](03-ProductTrace-AI/17-Development-Freeze.md)**
+- **[2–3 Minute Demo Script](03-ProductTrace-AI/16-Demo-Script.md)**
 
-Two genuine live evaluation runs are preserved. The first scored **65% overall**, exposing taxonomy, grounding, and evaluation-design defects. After root-cause analysis and corrective product changes—without lowering governance thresholds—the second run reached **95% overall**, **95% classification accuracy**, and **100% evidence grounding**, with **0 execution errors**, **0 unsupported recommendations**, and **0 critical failures**.
+### Final proof points
 
-The build intentionally preserves the failed first run and the decisions that followed it. ProductTrace is therefore presented as evidence of **PM iteration, AI evaluation, governance, and measurable product improvement**, not as a claim that the first implementation was production-ready.
+- **43/43 API regression tests passed** at development freeze.
+- Two genuine live AI evaluation runs are preserved: **65% → 95% overall**, **70% → 95% classification accuracy**, and **85% → 100% evidence grounding**.
+- Synthetic instrumentation validation passed **30/30 assertions** while remaining explicitly labeled synthetic rather than production telemetry.
+- Market Intelligence added **12 verified external sources**, **3 competitor profiles**, **3 Market Themes**, and **1 grounded Market Opportunity**.
+- The first live Discovery Criteria case ended **More Discovery Needed** because Root Cause and Value/Impact were still unvalidated.
+- Final engineering audit found **no high- or medium-severity defects**.
 
-> ProductTrace is a portfolio prototype. Its current evidence demonstrates implemented workflow behavior, live AI evaluation, and documented governance decisions; it does not claim market adoption or production business outcomes.
+The project intentionally preserves failed evaluations, assumptions, governance blocks, and incomplete discovery rather than manufacturing a perfect product narrative.
+
+> ProductTrace is a portfolio prototype and development is now frozen. Its evidence demonstrates implemented workflow behavior, live AI evaluation, governance, market-research provenance, and structured discovery; it does not claim market adoption, production telemetry, or validated business outcomes.
 
 ## What This Portfolio Demonstrates
 
@@ -123,4 +131,4 @@ The objective is not to showcase code volume. It is to demonstrate **product rea
 
 ## Current Focus
 
-Current work is expanding ProductTrace into **instrumentation readiness and Market Intelligence**, while future projects will continue exploring agentic AI, AI evaluation, governance, IAM/identity, workflow automation, and practical product-building under the same evidence-based PM standard.
+ProductTrace is now **development frozen** as the final major capstone build. Current learning is shifting toward the **Anthropic course**, personally testing the existing portfolio products, and building smaller Lovable experiments that apply new AI concepts without turning every lesson into another large platform.
