@@ -38,3 +38,19 @@ If a comparison dimension is not established by the current source set, ProductT
 **Not established from current sources**
 
 rather than infer the missing value.
+
+
+## Additional claim-level pricing evidence
+
+These captures were added to strengthen competitor pricing provenance so numeric pricing claims can link to an exact official-source excerpt rather than only a profile-level URL.
+
+| Company | Source | Pricing claim | Exact supporting excerpt |
+| --- | --- | --- | --- |
+| Productboard | https://www.productboard.com/pricing/ | Productboard Plus pricing | “$19 maker/month billed annually (or $25 maker/month, billed monthly)” |
+| Productboard | https://www.productboard.com/pricing/ | Productboard Business pricing | “$59 maker/month 2 makers minimum, billed annually (or $75 maker/month, 2 makers minimum, billed monthly)” |
+| Dovetail | https://dovetail.com/pricing/ | Dovetail Free pricing | “$0 user/month” |
+| Dovetail | https://dovetail.com/pricing/ | Dovetail Enterprise pricing | “Custom pricing” |
+| Jira Product Discovery | https://www.atlassian.com/software/jira/product-discovery/pricing | Standard pricing | “$10 per creator / month” |
+| Jira Product Discovery | https://www.atlassian.com/software/jira/product-discovery/pricing | Premium pricing | “$25 per creator / month” |
+
+These are source captures, not recommendations or competitor rankings.
