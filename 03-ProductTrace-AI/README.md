@@ -1,55 +1,88 @@
 # ProductTrace AI
 
-**Tagline:** *From customer signal to product decision — with the evidence attached.*
+> **From customer signal to product decision — with the evidence attached.**
 
-ProductTrace is an AI-assisted product decision system designed to help Product Managers move from fragmented evidence to structured, traceable product decisions.
+ProductTrace is an AI-assisted evidence-to-decision system for Product Managers. It connects customer evidence, market evidence, AI synthesis, structured discovery, experiment design, evaluation, and launch governance while preserving the evidence and human decision history behind each step.
 
-The core workflow is:
+**Portfolio status:** **Development frozen — final capstone build**
 
-**Evidence → Themes → Opportunities → Experiments → Evaluation → Launch Decision**
+---
 
-AI assists with synthesis and recommendation, but ProductTrace keeps decision authority, thresholds, provenance, and final approval under explicit human control.
+## Project at a glance
 
-## What ProductTrace demonstrates
+| Area | Final state |
+| --- | --- |
+| Engineering | **43/43 API regression tests passed**; API/frontend typechecks and production builds passed |
+| Live AI evaluation | **65% → 95% overall pass rate** after root-cause remediation |
+| Evidence grounding | **85% → 100%** |
+| Unsupported recommendations | **0%** in both recorded live eval runs |
+| Critical eval failures | **0** in final run |
+| Instrumentation validation | **30/30 synthetic assertions passed** |
+| V1 Launch Gate | **10/10 eligibility criteria passed** |
+| Final V1 PM decision | **Approve** — portfolio prototype checkpoint only |
+| Market Intelligence | 12 verified external sources, 3 competitors, 3 Market Themes, 1 grounded Market Opportunity |
+| Discovery Criteria | First live case ended **More Discovery Needed** because Root Cause and Value/Impact remain unvalidated |
+| Development freeze | **Approved** — no high- or medium-severity defects |
 
-- Evidence ingestion and persistent product state
-- AI-assisted theme analysis
-- Evidence traceability and exact-source grounding
-- PM Accept / Modify / Reject / Defer decision states
-- Prioritization across impact, confidence, evidence strength, risk, and reversibility
-- Experiment definition and metric design
-- Real AI evaluation runs
-- Governance thresholds
-- Decision history and auditability
-- Human-controlled Launch Gate
-- Instrumentation-readiness planning
+---
 
-## Current V1 status
+## Product architecture
 
-**V1 portfolio checkpoint: COMPLETE**
+```mermaid
+flowchart LR
+    A[Customer & Product Evidence] --> B[AI Analysis]
+    B --> C[Opportunity Board]
 
-Final governed launch decision: **APPROVE**
+    D[External Market Evidence] --> E[Market Intelligence]
+    E --> F[Market Opportunity]
 
-Launch decision ID: `decision-1790044035682`
+    C --> G[Discovery Criteria]
+    F --> G
 
-### Completed
-- Live AI evidence analysis
-- Exact evidence grounding
-- Opportunity governance and immutable original AI proposal
-- Experiment Builder
-- Decision History
-- Real Eval Center
-- Configurable governance thresholds
-- Launch Gate enforcement
-- Two persisted live evaluation runs
-- Instrumentation Plan implementation completed in Replit
-- Synthetic instrumentation validation: 30/30 assertions passed
-- All 10 Launch Gate eligibility criteria passed
-- Final PM approval persisted as an immutable launch-decision snapshot
+    G --> H[Formal Opportunity]
+    H --> I[Experiment Builder]
+    I --> J[Eval Center]
+    J --> K[Launch Gate]
 
-### Latest evaluation evidence
+    L[Evidence Provenance & Decision History] -. spans every stage .-> B
+    L -.-> C
+    L -.-> E
+    L -.-> G
+    L -.-> I
+    L -.-> J
+    L -.-> K
+```
 
-| Metric | Live Run 1 | Live Run 2 |
+### Governance principle
+
+> **AI proposes. Evidence supports. Discovery reduces uncertainty. The Product Manager decides.**
+
+AI assists with synthesis, classification, drafting, and evaluation. It does **not** autonomously validate problems, approve opportunities, approve experiments, approve discovery, promote formal opportunities, or make the final launch decision.
+
+---
+
+## Why ProductTrace exists
+
+AI can generate product ideas quickly, but speed alone creates risks:
+
+- unsupported recommendations
+- weak source provenance
+- hidden assumptions
+- over-automation
+- false confidence
+- loss of PM accountability
+
+ProductTrace is designed around the opposite standard: **evidence first, explicit uncertainty, visible human decisions, and an immutable audit trail.**
+
+---
+
+## Key product proof points
+
+### 1. Failed AI evaluation was preserved — not hidden
+
+The first live Eval Center run scored:
+
+| Metric | Run 1 | Run 2 |
 | --- | ---: | ---: |
 | Overall pass rate | 65% | **95%** |
 | Classification accuracy | 70% | **95%** |
@@ -58,38 +91,109 @@ Launch decision ID: `decision-1790044035682`
 | Execution error rate | 0% | **0%** |
 | Critical cases passed | 4/4 | **4/4** |
 
-The second run improved the overall pass rate by **30 percentage points** without lowering governance thresholds.
+The audit found taxonomy mismatch, invalid expected labels, exact-string scoring problems, missing citations, and expected-label leakage. Those issues were remediated **without lowering governance thresholds**.
 
-## Artifacts
+### 2. Instrumentation stayed honest about what was synthetic
 
-1. [Problem Discovery](01-Problem-Discovery.md)
-2. [Product Requirements Document](02-Product-Requirements-Document.md)
-3. [AI Evaluation and Governance](03-AI-Evaluation-and-Governance.md)
-4. [Build Retrospective](04-Build-Retrospective.md)
-5. [Product Roadmap](05-Product-Roadmap.md)
-6. [Instrumentation Plan](06-Instrumentation-Plan.md)
-7. [Instrumentation Validation](07-Instrumentation-Validation.md)
-8. [V1 Launch Decision](08-V1-Launch-Decision.md)
-9. [Market Intelligence Research Brief](09-Market-Intelligence-Research-Brief.md)
-10. [Market Source Register](10-Market-Source-Register.md)
-11. [Market Intelligence Audit](11-Market-Intelligence-Audit.md)
-12. [Discovery Criteria Design](12-Discovery-Criteria-Design.md)
-13. [First Live Discovery Case](13-First-Live-Discovery-Case.md)
-14. [Final Architecture & Workflow](14-Final-Architecture-and-Workflow.md)
-15. [Final Build Retrospective](15-Final-Build-Retrospective.md)
-16. [2–3 Minute Demo Script](16-Demo-Script.md)
-17. [Development Freeze](17-Development-Freeze.md)
-18. [Interview Talking Points](18-Interview-Talking-Points.md)
-19. [Portfolio Screenshot Plan](19-Portfolio-Screenshot-Plan.md)
-20. [Final Portfolio Case Study](20-Final-Portfolio-Case-Study.md)
+The V1 experiment instrumentation plan defined 9 events and 5 metric mappings.
 
-## Prototype
+Synthetic validation passed **30/30 assertions with zero violations**.
 
-The working prototype is being built in Replit and remains a portfolio-development environment rather than a production launch.
+ProductTrace still labels telemetry as **Planned only** and does not present synthetic validation as production evidence.
 
-Current Replit project:
-- ProductTrace working app: https://replit.com/replid/846207e6-cd18-4a16-a306-951135258fb6
+### 3. Market Intelligence added external evidence without surrendering PM control
 
-## Portfolio note
+The workflow expanded to:
 
-ProductTrace is intentionally documented as an iterative product build. Failed evaluations, audit findings, and corrective design decisions are preserved because the goal is to demonstrate product judgment and measurable iteration rather than present a falsely perfect first build.
+**Research Brief → Verified Sources → Competitor Context → Market Themes → Market Opportunity**
+
+Official-source research was captured with exact excerpts and provenance. A negative governance control correctly blocked Market Opportunity synthesis before a PM accepted or modified a Market Theme.
+
+### 4. Discovery Criteria stopped an attractive opportunity from advancing too early
+
+The first live Discovery record inherited real internal and external evidence, but ProductTrace still concluded:
+
+**More Discovery Needed**
+
+The unresolved items were substantive:
+
+- validated Root Cause
+- validated user/business Value and Impact
+
+The system deliberately did **not** turn an evidence-backed hypothesis into product commitment.
+
+---
+
+## Start here
+
+For a fast portfolio review:
+
+1. **[Final Portfolio Case Study](20-Final-Portfolio-Case-Study.md)** — complete product story
+2. **[Final Architecture & Workflow](14-Final-Architecture-and-Workflow.md)** — system design and governance
+3. **[2–3 Minute Demo Script](16-Demo-Script.md)** — interview/demo walkthrough
+4. **[Interview Talking Points](18-Interview-Talking-Points.md)** — AI PM discussion prompts
+5. **[First Live Discovery Case](13-First-Live-Discovery-Case.md)** — why the system chose More Discovery Needed
+6. **[Development Freeze](17-Development-Freeze.md)** — final engineering verification
+
+---
+
+## Artifact library
+
+### Product foundation
+
+- [01 — Problem Discovery](01-Problem-Discovery.md)
+- [02 — Product Requirements Document](02-Product-Requirements-Document.md)
+- [05 — Product Roadmap](05-Product-Roadmap.md)
+
+### AI evaluation, experimentation & launch governance
+
+- [03 — AI Evaluation and Governance](03-AI-Evaluation-and-Governance.md)
+- [04 — Build Retrospective](04-Build-Retrospective.md)
+- [06 — Instrumentation Plan](06-Instrumentation-Plan.md)
+- [07 — Instrumentation Validation](07-Instrumentation-Validation.md)
+- [08 — V1 Launch Decision](08-V1-Launch-Decision.md)
+
+### Market Intelligence
+
+- [09 — Market Intelligence Research Brief](09-Market-Intelligence-Research-Brief.md)
+- [10 — Market Source Register](10-Market-Source-Register.md)
+- [11 — Market Intelligence Audit](11-Market-Intelligence-Audit.md)
+
+### Discovery Criteria
+
+- [12 — Discovery Criteria Design](12-Discovery-Criteria-Design.md)
+- [13 — First Live Discovery Case](13-First-Live-Discovery-Case.md)
+
+### Portfolio closeout
+
+- [14 — Final Architecture & Workflow](14-Final-Architecture-and-Workflow.md)
+- [15 — Final Build Retrospective](15-Final-Build-Retrospective.md)
+- [16 — 2–3 Minute Demo Script](16-Demo-Script.md)
+- [17 — Development Freeze](17-Development-Freeze.md)
+- [18 — Interview Talking Points](18-Interview-Talking-Points.md)
+- [19 — Portfolio Screenshot Plan](19-Portfolio-Screenshot-Plan.md)
+- [20 — Final Portfolio Case Study](20-Final-Portfolio-Case-Study.md)
+
+---
+
+## Working prototype
+
+**Replit project:** https://replit.com/replid/846207e6-cd18-4a16-a306-951135258fb6
+
+The prototype is **development frozen**. Future product activity is intentionally limited to:
+
+- real user-led research
+- evidence entry from actual testing
+- evidence-based iteration
+- bug fixes discovered during real use
+- portfolio presentation polish
+
+No additional major feature phase is planned.
+
+---
+
+## Portfolio standard
+
+ProductTrace intentionally preserves failed evaluations, audit findings, assumptions, synthetic-versus-live distinctions, and decisions to stop or request more discovery.
+
+The objective is not to present a perfect first build. It is to demonstrate **product judgment, responsible AI governance, measurable iteration, and evidence-based decision-making.**
