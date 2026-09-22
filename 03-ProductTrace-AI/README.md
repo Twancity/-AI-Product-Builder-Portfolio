@@ -72,6 +72,7 @@ The second run improved the overall pass rate by **30 percentage points** withou
 8. [V1 Launch Decision](08-V1-Launch-Decision.md)
 9. [Market Intelligence Research Brief](09-Market-Intelligence-Research-Brief.md)
 10. [Market Source Register](10-Market-Source-Register.md)
+11. [Market Intelligence Audit](11-Market-Intelligence-Audit.md)
 
 ## Prototype
 
