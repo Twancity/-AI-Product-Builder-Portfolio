@@ -26,6 +26,12 @@ AI assists with synthesis and recommendation, but ProductTrace keeps decision au
 
 ## Current V1 status
 
+**V1 portfolio checkpoint: COMPLETE**
+
+Final governed launch decision: **APPROVE**
+
+Launch decision ID: `decision-1790044035682`
+
 ### Completed
 - Live AI evidence analysis
 - Exact evidence grounding
@@ -37,6 +43,9 @@ AI assists with synthesis and recommendation, but ProductTrace keeps decision au
 - Launch Gate enforcement
 - Two persisted live evaluation runs
 - Instrumentation Plan implementation completed in Replit
+- Synthetic instrumentation validation: 30/30 assertions passed
+- All 10 Launch Gate eligibility criteria passed
+- Final PM approval persisted as an immutable launch-decision snapshot
 
 ### Latest evaluation evidence
 
@@ -60,6 +69,7 @@ The second run improved the overall pass rate by **30 percentage points** withou
 5. [Product Roadmap](05-Product-Roadmap.md)
 6. [Instrumentation Plan](06-Instrumentation-Plan.md)
 7. [Instrumentation Validation](07-Instrumentation-Validation.md)
+8. [V1 Launch Decision](08-V1-Launch-Decision.md)
 
 ## Prototype
 
