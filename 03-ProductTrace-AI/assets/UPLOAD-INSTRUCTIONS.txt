@@ -1,0 +1,4 @@
+Upload all image files in this folder to:
+03-ProductTrace-AI/assets/
+
+Keep the filenames exactly as provided. The GitHub visual walkthrough markdown is written to use these paths.
