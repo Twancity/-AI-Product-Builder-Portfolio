@@ -51,7 +51,7 @@ Latest measured result:
 
 ## Phase 2.5 — Instrumentation readiness
 
-### Status: In progress
+### Status: Completed
 
 Goal:
 Ensure ProductTrace can distinguish a defined experiment from a measurable experiment.
@@ -86,7 +86,7 @@ Readiness should require:
 
 ## Phase 3 — Market Intelligence
 
-### Status: Next major build
+### Status: Next major build after completed V1 portfolio checkpoint
 
 Goal:
 Combine internal customer evidence with external market evidence.
