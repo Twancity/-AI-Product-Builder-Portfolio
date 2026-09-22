@@ -171,3 +171,17 @@ Product principle:
 > An idea should not become a product commitment before the problem and evidence have been examined.
 
 This feature is intentionally deferred until after Market Intelligence so the current V1-to-V2 scope remains controlled.
+
+
+## Portfolio Build Status
+
+**Development frozen — September 22, 2026**
+
+ProductTrace is complete as the final major portfolio build. Future activity should focus on:
+- real user-led research
+- research finding entry
+- evidence-based iteration
+- bug fixes discovered during use
+- portfolio presentation polish
+
+No additional major feature phase is planned.
