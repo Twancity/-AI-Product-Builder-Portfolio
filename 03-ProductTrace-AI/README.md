@@ -78,6 +78,10 @@ The second run improved the overall pass rate by **30 percentage points** withou
 14. [Final Architecture & Workflow](14-Final-Architecture-and-Workflow.md)
 15. [Final Build Retrospective](15-Final-Build-Retrospective.md)
 16. [2–3 Minute Demo Script](16-Demo-Script.md)
+17. [Development Freeze](17-Development-Freeze.md)
+18. [Interview Talking Points](18-Interview-Talking-Points.md)
+19. [Portfolio Screenshot Plan](19-Portfolio-Screenshot-Plan.md)
+20. [Final Portfolio Case Study](20-Final-Portfolio-Case-Study.md)
 
 ## Prototype
 
