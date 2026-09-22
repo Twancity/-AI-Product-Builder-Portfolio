@@ -4,6 +4,8 @@ A hands-on product management portfolio focused on **AI-enabled products, techni
 
 This portfolio is designed to show how I move from a user problem to a defined MVP, make scope and risk tradeoffs, validate acceptance criteria, and sequence future product bets.
 
+**Live portfolio:** https://zebra-zq3b9s.my.canva.site/antwan-gadsden
+
 ## Featured Projects
 
 | Project | Stage | What it demonstrates |
@@ -96,6 +98,7 @@ ProductTrace is the portfolio's final major capstone: an AI-assisted product-man
 - **[First Live Discovery Case](03-ProductTrace-AI/13-First-Live-Discovery-Case.md)**
 - **[Development Freeze](03-ProductTrace-AI/17-Development-Freeze.md)**
 - **[2–3 Minute Demo Script](03-ProductTrace-AI/16-Demo-Script.md)**
+- **[Visual Walkthrough](03-ProductTrace-AI/21-Visual-Walkthrough.md)**
 
 ### Final proof points
 
