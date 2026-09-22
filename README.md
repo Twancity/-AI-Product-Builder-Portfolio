@@ -6,14 +6,22 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 **Live portfolio:** https://zebra-zq3b9s.my.canva.site/antwan-gadsden
 
+## Start Here — Featured Capstone
+
+**[ProductTrace AI](03-ProductTrace-AI/)** is the strongest end-to-end case study in this portfolio. It demonstrates evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment and launch governance, and explicit human decision authority.
+
+- **[Final Portfolio Case Study](03-ProductTrace-AI/20-Final-Portfolio-Case-Study.md)**
+- **[Visual Walkthrough](03-ProductTrace-AI/21-Visual-Walkthrough.md)**
+- **[Development Freeze](03-ProductTrace-AI/17-Development-Freeze.md)**
+
 ## Featured Projects
 
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
+| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone — development frozen** | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
 | **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product — V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
 | **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype — verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
-| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone — development frozen** | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
 ## 1. Stash — Working Product
