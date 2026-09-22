@@ -75,6 +75,9 @@ The second run improved the overall pass rate by **30 percentage points** withou
 11. [Market Intelligence Audit](11-Market-Intelligence-Audit.md)
 12. [Discovery Criteria Design](12-Discovery-Criteria-Design.md)
 13. [First Live Discovery Case](13-First-Live-Discovery-Case.md)
+14. [Final Architecture & Workflow](14-Final-Architecture-and-Workflow.md)
+15. [Final Build Retrospective](15-Final-Build-Retrospective.md)
+16. [2–3 Minute Demo Script](16-Demo-Script.md)
 
 ## Prototype
 
