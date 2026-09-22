@@ -70,6 +70,8 @@ The second run improved the overall pass rate by **30 percentage points** withou
 6. [Instrumentation Plan](06-Instrumentation-Plan.md)
 7. [Instrumentation Validation](07-Instrumentation-Validation.md)
 8. [V1 Launch Decision](08-V1-Launch-Decision.md)
+9. [Market Intelligence Research Brief](09-Market-Intelligence-Research-Brief.md)
+10. [Market Source Register](10-Market-Source-Register.md)
 
 ## Prototype
 
