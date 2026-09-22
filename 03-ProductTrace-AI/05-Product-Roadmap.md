@@ -139,3 +139,35 @@ Not required for the current portfolio MVP:
 - Productboard integration
 - Slack ingestion
 - Production-scale data architecture
+
+
+## Future Upgrade — Discovery Criteria
+
+### Status: Deferred / future enhancement
+
+Purpose:
+Create a structured intake and discovery framework for new client or product ideas before they become formal opportunities.
+
+Potential workflow:
+
+**Idea Intake → Discovery Criteria → Evidence Needed → Validation Questions → Discovery Decision**
+
+Possible criteria:
+- Who is the user or client?
+- What problem is being observed?
+- What evidence currently exists?
+- How frequently does the problem occur?
+- What is the user/business impact?
+- Who is affected?
+- What assumptions are being made?
+- What evidence is still missing?
+- Is this a customer problem, internal request, market opportunity, or solution idea?
+- What discovery method should be used next?
+- What would invalidate the idea?
+- What decision should the discovery work enable?
+
+Product principle:
+
+> An idea should not become a product commitment before the problem and evidence have been examined.
+
+This feature is intentionally deferred until after Market Intelligence so the current V1-to-V2 scope remains controlled.
