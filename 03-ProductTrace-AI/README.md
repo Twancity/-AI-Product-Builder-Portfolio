@@ -2,7 +2,9 @@
 
 > **From customer signal to product decision — with the evidence attached.**
 
-ProductTrace is an AI-assisted evidence-to-decision system for Product Managers. It connects customer evidence, market evidence, AI synthesis, structured discovery, experiment design, evaluation, and launch governance while preserving the evidence and human decision history behind each step.\n\n![ProductTrace architecture](assets/00-producttrace-architecture.jpg)
+ProductTrace is an AI-assisted evidence-to-decision system for Product Managers. It connects customer evidence, market evidence, AI synthesis, structured discovery, experiment design, evaluation, and launch governance while preserving the evidence and human decision history behind each step.
+
+![ProductTrace architecture](assets/00-producttrace-architecture.jpg)
 
 **Portfolio status:** **Development frozen — final capstone build**
 
@@ -133,7 +135,8 @@ For a fast portfolio review:
 3. **[2–3 Minute Demo Script](16-Demo-Script.md)** — interview/demo walkthrough
 4. **[Interview Talking Points](18-Interview-Talking-Points.md)** — AI PM discussion prompts
 5. **[First Live Discovery Case](13-First-Live-Discovery-Case.md)** — why the system chose More Discovery Needed
-6. **[Development Freeze](17-Development-Freeze.md)** — final engineering verification\n7. **[Visual Walkthrough](21-Visual-Walkthrough.md)** — recruiter-friendly screenshot tour
+6. **[Development Freeze](17-Development-Freeze.md)** — final engineering verification
+7. **[Visual Walkthrough](21-Visual-Walkthrough.md)** — recruiter-friendly screenshot tour
 
 ---
 
@@ -172,7 +175,8 @@ For a fast portfolio review:
 - [17 — Development Freeze](17-Development-Freeze.md)
 - [18 — Interview Talking Points](18-Interview-Talking-Points.md)
 - [19 — Portfolio Screenshot Plan](19-Portfolio-Screenshot-Plan.md)
-- [20 — Final Portfolio Case Study](20-Final-Portfolio-Case-Study.md)\n- [21 — Visual Walkthrough](21-Visual-Walkthrough.md)
+- [20 — Final Portfolio Case Study](20-Final-Portfolio-Case-Study.md)
+- [21 — Visual Walkthrough](21-Visual-Walkthrough.md)
 
 ---
 
