@@ -73,6 +73,8 @@ The second run improved the overall pass rate by **30 percentage points** withou
 9. [Market Intelligence Research Brief](09-Market-Intelligence-Research-Brief.md)
 10. [Market Source Register](10-Market-Source-Register.md)
 11. [Market Intelligence Audit](11-Market-Intelligence-Audit.md)
+12. [Discovery Criteria Design](12-Discovery-Criteria-Design.md)
+13. [First Live Discovery Case](13-First-Live-Discovery-Case.md)
 
 ## Prototype
 
