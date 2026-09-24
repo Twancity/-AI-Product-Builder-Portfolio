@@ -1,4 +1,4 @@
-# ProductTrace — Discovery Criteria Design
+# ProductTrace: Discovery Criteria Design
 
 ## Purpose
 

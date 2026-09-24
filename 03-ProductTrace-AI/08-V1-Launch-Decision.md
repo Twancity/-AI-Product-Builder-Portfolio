@@ -1,4 +1,4 @@
-# ProductTrace — V1 Launch Decision
+# ProductTrace: V1 Launch Decision
 
 ## Decision
 

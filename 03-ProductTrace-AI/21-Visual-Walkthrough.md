@@ -1,4 +1,4 @@
-# ProductTrace — Visual Walkthrough
+# ProductTrace: Visual Walkthrough
 
 This gallery tells the ProductTrace story from evidence intake through AI synthesis, PM governance, experimentation, market intelligence, discovery, and the decision to request more discovery rather than force an opportunity forward.
 

@@ -18,16 +18,16 @@ A Product Manager remains responsible for determining whether an AI-assisted out
 
 I use four concepts to structure responsible interaction with AI:
 
-**Delegation — What should AI do?**  
+**Delegation: What should AI do?**  
 Determine which tasks are appropriate to delegate to AI and which decisions should remain human-owned.
 
-**Description — What exactly should AI do?**  
+**Description: What exactly should AI do?**  
 Provide sufficient context, objectives, constraints, source information, and expected output characteristics.
 
-**Discernment — Is the output good enough?**  
+**Discernment: Is the output good enough?**  
 Evaluate AI-generated results for qualities such as accuracy, relevance, groundedness, completeness, clarity, and safety.
 
-**Diligence — Are we using AI responsibly?**  
+**Diligence: Are we using AI responsibly?**  
 Maintain appropriate human accountability, transparency, privacy, governance, monitoring, and escalation mechanisms.
 
 ## Product Decision Principle
@@ -40,7 +40,7 @@ My product evaluation starts with:
 
 The decision should then consider the desired outcome, alternative solutions, AI capabilities and limitations, implementation risk, and the level of human oversight required.
 
-## Applied Example — CareBridge AI
+## Applied Example: CareBridge AI
 
 I am applying these principles to **CareBridge AI**, a product concept focused on helping recently discharged patients better understand and manage clinician-approved post-discharge instructions.
 
@@ -48,7 +48,7 @@ Potential AI capabilities include simplifying complex instructions, organizing i
 
 AI would not independently diagnose conditions, prescribe treatment, modify medication instructions, or alter a clinician-approved care plan.
 
-When the system cannot produce an appropriately grounded response—or encounters information requiring clinical judgment—the experience should transition to an approved human escalation path.
+When the system cannot produce an appropriately grounded response, or encounters information requiring clinical judgment, the experience should transition to an approved human escalation path.
 
 ## Human Accountability
 

@@ -1,4 +1,4 @@
-# ProductTrace — 2–3 Minute Demo Script
+# ProductTrace: 2 to 3 Minute Demo Script
 
 ## Opening
 

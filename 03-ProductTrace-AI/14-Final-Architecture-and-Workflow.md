@@ -1,4 +1,4 @@
-# ProductTrace — Final Architecture & Workflow
+# ProductTrace: Final Architecture & Workflow
 
 ## Product principle
 

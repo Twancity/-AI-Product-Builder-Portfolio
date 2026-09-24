@@ -1,4 +1,4 @@
-# ProductTrace — Phase 3 Market Intelligence Audit
+# ProductTrace: Phase 3 Market Intelligence Audit
 
 ## Status
 
@@ -158,4 +158,4 @@ The end-to-end technical and governance path through **opportunity generation** 
 
 Remaining human checkpoint:
 
-**PM review of the generated Market Opportunity — Accept / Modify / Reject / Defer.**
+**PM review of the generated Market Opportunity: Accept / Modify / Reject / Defer.**

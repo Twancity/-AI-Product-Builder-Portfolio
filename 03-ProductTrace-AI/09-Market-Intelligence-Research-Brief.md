@@ -1,4 +1,4 @@
-# ProductTrace — Market Intelligence Research Brief
+# ProductTrace: Market Intelligence Research Brief
 
 ## Decision to support
 

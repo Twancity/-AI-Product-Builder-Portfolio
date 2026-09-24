@@ -1,4 +1,4 @@
-# ProductTrace — AI Evaluation and Governance
+# ProductTrace: AI Evaluation and Governance
 
 ## Why evaluation is a product feature
 

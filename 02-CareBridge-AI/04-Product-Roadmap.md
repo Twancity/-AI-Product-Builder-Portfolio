@@ -1,4 +1,4 @@
-# CareBridge AI — Agent Product Roadmap
+# CareBridge AI: Agent Product Roadmap
 
 > **Portfolio status:** A bounded fictional-data prototype is implemented and verified but remains unpublished. This does not represent a deployed clinical system or achieved clinical outcomes.
 
@@ -41,7 +41,7 @@ flowchart LR
 | Working Prototype | Complete, unpublished | Bounded workflow using fictional data |
 | Evaluation Report | Complete for recorded prototype scope | Synthetic checks, bounded live cases, failure analysis, and limitations |
 
-## NOW — Foundation and safe MVP
+## NOW: Foundation and safe MVP
 
 **Objective:** Prove that the product can safely improve understanding of clinician-approved activity restrictions.
 
@@ -65,7 +65,7 @@ flowchart LR
 - Critical instruction changes or omissions must remain at zero in the pilot test set
 - Cases requiring clinical judgment must be correctly escalated
 
-## NEXT — Build and validate
+## NEXT: Build and validate
 
 **Objective:** Turn the approved workflow into a basic agent and test it against expected and failure scenarios.
 
@@ -87,7 +87,7 @@ flowchart LR
 - Confirmed handoff delivery before telling a patient that staff received the request
 - Acceptable usability results from representative patient and staff testing
 
-## LATER — Enhance and scale
+## LATER: Enhance and scale
 
 **Objective:** Add value only after the MVP demonstrates safety, usefulness, and operational reliability.
 

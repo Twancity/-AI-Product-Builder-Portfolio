@@ -1,6 +1,6 @@
 # CareBridge evaluation notes
 
-## Limited live Gemini evaluation — September 19, 2026
+## Limited live Gemini evaluation: September 19, 2026
 
 Scope was limited to the existing fictional walker scenario. The owner confirmed the Google project as Free tier. The API Server workflow was restarted and recognized a nonempty `GEMINI_API_KEY` plus `GEMINI_MODEL=gemini-2.5-flash`.
 
@@ -36,7 +36,7 @@ No successful live explanation existed to inspect in the rendered success state.
 
 This limited test does not establish clinical safety. The current blocker is the non-retryable provider error from the configured model request. Billing was not enabled, the model/provider were not changed, and no real patient data was used.
 
-## Sanitized diagnostic retest — September 19, 2026
+## Sanitized diagnostic retest: September 19, 2026
 
 Before this retest, server-only diagnostics were added and verified with fake credential, URL, question, source, and provider-error fixtures. The fixtures confirmed that diagnostics retain only a category, safe HTTP status, normalized reason, short redacted summary, and attempt number. Patient-facing responses remain generic and source-backed.
 
@@ -56,7 +56,7 @@ The request stopped immediately because model access errors are non-retryable. N
 
 At that checkpoint, the failure was diagnosed rather than hypothetical. The remaining blocker was owner authorization and eligibility review for any model change; simulated clinical handoff and teach-back were still pending. This historical result does not establish clinical safety.
 
-## Replacement-model activation — September 19, 2026
+## Replacement-model activation: September 19, 2026
 
 The owner saved `GEMINI_MODEL=gemini-3.1-flash-lite` and confirmed the Google project as Free tier. The existing credential remained private.
 
@@ -85,13 +85,13 @@ The rendered UI showed the honest failure message, exact source evidence, `Not L
 
 At that checkpoint, the replacement connection reached the model, but CareBridge was not validated as working because no genuine explanation was accepted. The next task was to diagnose the failed source-fidelity assertion before another live attempt; simulated handoff and teach-back were still pending. This historical result does not establish clinical safety.
 
-## Prompt/validator alignment and bounded live validation — September 19, 2026
+## Prompt/validator alignment and bounded live validation: September 19, 2026
 
 The owner authorized a conservative repair after inspection confirmed that the model was asked for a plain-language paraphrase while the validator required exact clinical terms and a copied source fingerprint.
 
 ### Repair
 
-- The prompt now explicitly states the exact required clinical terms, both standing and walking conditions, physical-therapy clearance condition, 10–280 character boundary, prohibited early-stop/contradictory wording, and prohibited treatment additions.
+- The prompt now explicitly states the exact required clinical terms, both standing and walking conditions, physical-therapy clearance condition, 10 to 280 character boundary, prohibited early-stop/contradictory wording, and prohibited treatment additions.
 - The model no longer copies a source fingerprint. Source identity, patient, section, version, exact instruction, and metadata remain selected and owned by the server.
 - Model output accepts only explanation, the exact preserved-facts vocabulary, and unsupported additions. Unexpected source/version metadata is rejected.
 - Private diagnostics identify the exact failed assertion without recording credentials, questions, source/model text, headers, URLs, or provider payloads.
@@ -117,7 +117,7 @@ Independent comparison confirmed that the accepted explanation retained walker u
 
 This was one narrow successful fictional case, not clinical validation or proof of general model safety. At that checkpoint, broader adversarial evaluation, clinical governance, simulated handoff, and teach-back remained pending.
 
-## Simulated review handoff milestone — September 19, 2026
+## Simulated review handoff milestone: September 19, 2026
 
 No Gemini call was made for this milestone. The existing `gemini-3.1-flash-lite` configuration, source checks, exact-source fallback, and previously recorded single accepted live walker explanation were unchanged.
 
@@ -142,7 +142,7 @@ No Gemini call was made for this milestone. The existing `gemini-3.1-flash-lite`
 
 This is a simulated queue only. No real message, clinician, external clinical system, phone number, upload, paid service, model change, billing change, or deployment was used. Teach-back and broader live/adversarial AI evaluation remain next.
 
-## Request status and next steps milestone — September 19, 2026
+## Request status and next steps milestone: September 19, 2026
 
 This milestone recovered the Product Builder checkpoint requirement for patient-visible escalation status before teach-back. It used existing synthetic scenarios only and made no Gemini call.
 
@@ -171,7 +171,7 @@ The first browser run had one obsolete assertion expecting the old pre-submissio
 
 All reviewer acknowledgement and responses are manual simulations. No real request, clinician, approval, patient acknowledgement, authentication/authorization, durable audit store, clinical integration, or resolution workflow exists. Broader live AI evaluation, production AuthN/AuthZ, and genuine clinical integrations remain unfinished.
 
-## Optional teach-back milestone — September 19, 2026
+## Optional teach-back milestone: September 19, 2026
 
 Teach-back was implemented only for the exact current synthetic walker source after a supported answer. It is a separate bounded comprehension activity, not reviewer acknowledgement, clinical resolution, approval, adherence measurement, or proof of readiness.
 

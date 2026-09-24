@@ -1,4 +1,4 @@
-# ProductTrace — Product Requirements Document
+# ProductTrace: Product Requirements Document
 
 ## Product summary
 

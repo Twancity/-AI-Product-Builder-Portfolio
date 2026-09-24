@@ -1,4 +1,4 @@
-# CareBridge AI — AI Product Principles
+# CareBridge AI: AI Product Principles
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# ProductTrace — Instrumentation Plan
+# ProductTrace: Instrumentation Plan
 
 ## Purpose
 
@@ -211,9 +211,9 @@ ProductTrace does not auto-approve instrumentation.
 - Telemetry status: Planned only
 - PM instrumentation approval: Not yet provided
 - Synthetic validation suite: **Completed**
-- Validation result: **PASS — 30/30 assertions, zero violations**
+- Validation result: **PASS: 30/30 assertions, zero violations**
 - Validation report: [Instrumentation Validation](07-Instrumentation-Validation.md)
-- Launch Gate dependency: Open — pending explicit PM acceptance of the unverified demo baseline and PM instrumentation approval
+- Launch Gate dependency: Open, pending explicit PM acceptance of the unverified demo baseline and PM instrumentation approval
 
 ## Product principle
 

@@ -1,4 +1,4 @@
-# CareBridge AI — AI Output Evaluation
+# CareBridge AI: AI Output Evaluation
 
 ## Purpose
 
@@ -64,7 +64,7 @@ Questions:
 
 Readability is not sufficient. An output that sounds confident or helpful may still be unsafe if it is inaccurate, unsupported, incomplete, or clinically inappropriate.
 
-## Test Case 001 — Medication Instruction
+## Test Case 001: Medication Instruction
 
 ### Approved Source
 
@@ -92,7 +92,7 @@ This distinguishes an **AI-output problem** from a **source-data problem**.
 
 ---
 
-## Test Case 002 — Medication Instruction With Unsupported Assumption
+## Test Case 002: Medication Instruction With Unsupported Assumption
 
 ### Approved Source
 
@@ -118,7 +118,7 @@ The model should not convert a general instruction into a more specific clinical
 
 ---
 
-## Test Case 003 — Unsafe Medication Hallucination
+## Test Case 003: Unsafe Medication Hallucination
 
 ### Approved Source
 
@@ -146,7 +146,7 @@ A response can be fluent, specific, and confident while still being unsafe.
 
 ---
 
-## Test Case 004 — Post-Operative Incision Instruction
+## Test Case 004: Post-Operative Incision Instruction
 
 ### Approved Source
 
