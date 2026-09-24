@@ -1,4 +1,4 @@
-# ProductTrace — Build Retrospective
+# ProductTrace: Build Retrospective
 
 ## Why this document exists
 
@@ -22,7 +22,7 @@ flowchart TD
     J --> K[Market Intelligence - next phase]
 ```
 
-## Stage 1 — Polished workflow, weak implementation truth
+## Stage 1: Polished workflow, weak implementation truth
 
 The first prototype looked credible and demonstrated the intended product flow.
 
@@ -43,7 +43,7 @@ The build was redirected toward implementation truth:
 - exact citations
 - real decision auditing
 
-## Stage 2 — Live AI and provenance
+## Stage 2: Live AI and provenance
 
 The next iteration introduced:
 
@@ -60,7 +60,7 @@ The next iteration introduced:
 
 This moved ProductTrace away from a thin prompt wrapper toward a stateful decision system.
 
-## Stage 3 — Real evaluation
+## Stage 3: Real evaluation
 
 The Eval Center was rebuilt so active cases executed real model behavior.
 
@@ -75,7 +75,7 @@ The first genuine live run produced:
 
 The product did **not** meet its own thresholds.
 
-## Stage 4 — Root-cause analysis
+## Stage 4: Root-cause analysis
 
 Inspection of the failed cases found that the model was not the only problem.
 
@@ -100,7 +100,7 @@ Empty citations were allowed.
 
 The model received the expected theme during evaluation.
 
-## Stage 5 — Corrective changes
+## Stage 5: Corrective changes
 
 The team corrected the evaluation design rather than lowering thresholds.
 
@@ -112,7 +112,7 @@ Changes:
 - Versioned the workflow
 - Preserved the first run unchanged
 
-## Stage 6 — Measured improvement
+## Stage 6: Measured improvement
 
 The second genuine live run produced:
 
@@ -137,7 +137,7 @@ This was not hidden.
 
 The remaining failure became another product-learning signal rather than a reason to manipulate thresholds.
 
-## Stage 7 — Launch readiness
+## Stage 7: Launch readiness
 
 Evaluation governance now passes.
 

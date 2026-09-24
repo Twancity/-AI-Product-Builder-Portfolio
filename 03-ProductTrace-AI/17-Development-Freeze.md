@@ -1,4 +1,4 @@
-# ProductTrace — Development Freeze
+# ProductTrace: Development Freeze
 
 ## Status
 
@@ -63,4 +63,4 @@ This is intentional. ProductTrace is frozen with the record positioned for real 
 
 ## Freeze principle
 
-> ProductTrace is complete as a portfolio build. The next source of product truth should come from actual use, observation, and research—not additional speculative features.
+> ProductTrace is complete as a portfolio build. The next source of product truth should come from actual use, observation, and research, not additional speculative features.

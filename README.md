@@ -6,7 +6,7 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 **Live portfolio:** https://zebra-zq3b9s.my.canva.site/antwan-gadsden
 
-## Start Here — Featured Capstone
+## Start Here: Featured Capstone
 
 **[ProductTrace AI](03-ProductTrace-AI/)** is the strongest end-to-end case study in this portfolio. It demonstrates evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment and launch governance, and explicit human decision authority.
 
@@ -18,13 +18,13 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
-| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone — development frozen** | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
-| **[Stash](https://github.com/Twancity/item-stash)** | **Working product — V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
-| **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product — V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
-| **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype — verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
+| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone: development frozen** | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
+| **[Stash](https://github.com/Twancity/item-stash)** | **Working product: V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
+| **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product: V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
+| **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype: verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
-## 1. Stash — Working Product
+## 1. Stash: Working Product
 
 **Tagline:** *Remember where you put everything.*
 
@@ -32,9 +32,9 @@ Stash is a mobile-first web application that helps people record where household
 
 ### Product progression
 
-- **V1 — MVP:** Add, search, view, edit, and delete stored items with local persistence.
-- **V1.1 — Voice Search:** Added browser-native speech recognition to reduce retrieval friction.
-- **V1.2 — Voice Add:** Added a guided voice flow to reduce capture friction while retaining explicit user review before save.
+- **V1: MVP:** Add, search, view, edit, and delete stored items with local persistence.
+- **V1.1: Voice Search:** Added browser-native speech recognition to reduce retrieval friction.
+- **V1.2: Voice Add:** Added a guided voice flow to reduce capture friction while retaining explicit user review before save.
 
 ### Product evidence
 
@@ -46,7 +46,7 @@ Stash is a mobile-first web application that helps people record where household
 
 The shipped releases were manually validated against defined acceptance criteria: V1 **10/10**, V1.1 **10/10**, and V1.2 **14/14**. These are acceptance-test results, not user-adoption or business-outcome claims.
 
-## 2. StudySteps — Multimodal AI Learning and Planning Product
+## 2. StudySteps: Multimodal AI Learning and Planning Product
 
 **Tagline:** *Turn confusing schoolwork into clear next steps.*
 
@@ -74,7 +74,7 @@ A key product lesson from V1 was that **technically valid AI output is not the s
 
 > StudySteps is a portfolio product build. V1 evidence is limited to implemented functionality, manual acceptance testing, responsive review, API/build checks, and documented product decisions; it does not claim public adoption or measured learning outcomes.
 
-## 3. CareBridge AI — Responsible AI Product Case Study and Prototype
+## 3. CareBridge AI: Responsible AI Product Case Study and Prototype
 
 CareBridge AI began as a concept-stage Patient Discharge Guidance Agent and now includes a working, unpublished portfolio prototype. It helps visitors explore fictional discharge instructions while keeping clinical judgment, real messaging, and real patient data outside the prototype.
 
@@ -92,9 +92,9 @@ The implemented prototype demonstrates exact-source retrieval, bounded rule-base
 
 > CareBridge AI uses fictional data only. It is not published or deployed for clinical use, does not contact real clinicians or systems, and does not represent achieved clinical outcomes.
 
-## 4. ProductTrace AI — Evidence-to-Decision Product System
+## 4. ProductTrace AI: Evidence-to-Decision Product System
 
-**Tagline:** *From customer signal to product decision — with the evidence attached.*
+**Tagline:** *From customer signal to product decision, with the evidence attached.*
 
 ProductTrace is the portfolio's final major capstone: an AI-assisted product-management system that connects customer evidence, external market research, AI synthesis, structured discovery, experiments, evaluation, and launch decisions while preserving explicit PM authority.
 
@@ -105,7 +105,7 @@ ProductTrace is the portfolio's final major capstone: an AI-assisted product-man
 - **[Final Architecture & Workflow](03-ProductTrace-AI/14-Final-Architecture-and-Workflow.md)**
 - **[First Live Discovery Case](03-ProductTrace-AI/13-First-Live-Discovery-Case.md)**
 - **[Development Freeze](03-ProductTrace-AI/17-Development-Freeze.md)**
-- **[2–3 Minute Demo Script](03-ProductTrace-AI/16-Demo-Script.md)**
+- **[2 to 3 Minute Demo Script](03-ProductTrace-AI/16-Demo-Script.md)**
 - **[Visual Walkthrough](03-ProductTrace-AI/21-Visual-Walkthrough.md)**
 
 ### Final proof points

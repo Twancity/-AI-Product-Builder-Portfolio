@@ -1,4 +1,4 @@
-# ProductTrace — Final Portfolio Case Study
+# ProductTrace: Final Portfolio Case Study
 
 ## Overview
 

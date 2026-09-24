@@ -1,4 +1,4 @@
-# ProductTrace — Problem Discovery
+# ProductTrace: Problem Discovery
 
 ## Problem
 

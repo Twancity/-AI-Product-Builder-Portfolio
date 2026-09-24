@@ -1,8 +1,8 @@
-# CareBridge AI — Product Requirements Document
+# CareBridge AI: Product Requirements Document
 
 **Version:** 0.2
 **Status:** Reconciled with completed fictional-data portfolio prototype; unpublished
-**Product:** CareBridge AI — Patient Discharge Guidance Agent  
+**Product:** CareBridge AI: Patient Discharge Guidance Agent  
 **Owner role:** Product Management  
 **Last updated:** September 2026
 
@@ -59,7 +59,7 @@ A recently discharged adult outpatient orthopedic patient who receives multi-ste
 
 ### Initial pilot segment
 
-Adults ages 18–60 discharged after an outpatient orthopedic procedure.
+Adults ages 18 to 60 discharged after an outpatient orthopedic procedure.
 
 This is a focused pilot hypothesis, not a permanent eligibility restriction.
 
@@ -201,55 +201,55 @@ Help an authenticated patient understand and follow finalized, clinician-approve
 
 ## 13. Functional Requirements
 
-### FR-01 — Authentication
+### FR-01: Authentication
 
 The system must authenticate the patient before displaying patient-specific discharge information.
 
-### FR-02 — Authorization
+### FR-02: Authorization
 
 The system must restrict access to the authenticated patient's authorized encounter and minimum necessary information.
 
-### FR-03 — Approved-plan retrieval
+### FR-03: Approved-plan retrieval
 
 The system must retrieve only a finalized discharge plan and return its source identifier, version, and timestamp.
 
-### FR-04 — Source display
+### FR-04: Source display
 
 The experience must display the original clinician-approved instruction alongside or directly linked to any AI-generated explanation.
 
-### FR-05 — Grounded explanation
+### FR-05: Grounded explanation
 
 The agent must generate explanations using only authorized source content and approved education material.
 
-### FR-06 — Critical-fact preservation
+### FR-06: Critical-fact preservation
 
 The explanation must preserve all material restrictions, dates, durations, warnings, and assistive-device directions contained in the source.
 
-### FR-07 — Teach-back
+### FR-07: Teach-back
 
 The experience must ask at least one teach-back question for a critical activity restriction and record whether review or escalation is required.
 
-### FR-08 — Reminder control
+### FR-08: Reminder control
 
 Clinical staff must define required timing constraints. Patients may select a preferred time and permitted delivery channel within those constraints.
 
-### FR-09 — Clinical escalation
+### FR-09: Clinical escalation
 
 The agent must create a structured handoff when information conflicts, required evidence is unavailable, the question requires clinical judgment, or the agent cannot answer safely.
 
-### FR-10 — Delivery confirmation
+### FR-10: Delivery confirmation
 
 The system must receive a request identifier and confirmed delivery status before telling the patient that the clinical team received the request.
 
-### FR-11 — Failed-handoff fallback
+### FR-11: Failed-handoff fallback
 
 If delivery is not confirmed, the system must state that delivery was not confirmed, record the failure, and show an organization-approved alternative contact path.
 
-### FR-12 — Auditability
+### FR-12: Auditability
 
 The system must record source references, relevant versions, selected tools, outcomes, stopping reasons, escalation status, and timestamps without unnecessarily copying the complete clinical record.
 
-### FR-13 — Session expiration
+### FR-13: Session expiration
 
 An expired or invalid session must block patient-specific access and require reauthentication.
 
@@ -331,31 +331,31 @@ The handoff must include the patient question, relevant source instruction, sour
 
 ## 18. User Stories
 
-### US-01 — Understand an instruction
+### US-01: Understand an instruction
 
 As a recently discharged patient, I want a plain-language explanation linked to my original instruction so that I can understand what I am expected to do without losing the approved meaning.
 
-### US-02 — Confirm understanding
+### US-02: Confirm understanding
 
 As a patient, I want a short check of my understanding so that unclear critical instructions can be identified before I act on them.
 
-### US-03 — Receive a reminder
+### US-03: Receive a reminder
 
 As a patient, I want to select an allowed reminder time so that I can remember an important approved task.
 
-### US-04 — Ask for help
+### US-04: Ask for help
 
 As a patient, I want unresolved questions routed to the appropriate clinical team so that I do not have to guess.
 
-### US-05 — Receive truthful status
+### US-05: Receive truthful status
 
 As a patient, I want to know whether my request was actually delivered so that I can use another approved contact method if necessary.
 
-### US-06 — Review an escalation
+### US-06: Review an escalation
 
 As a clinical staff member, I want the patient question and relevant instruction included in the handoff so that I can understand why the agent stopped.
 
-### US-07 — Audit the workflow
+### US-07: Audit the workflow
 
 As a compliance or product reviewer, I want traceable source and action records so that I can reconstruct what the system did and why.
 
@@ -428,7 +428,7 @@ The prototype is ready for a controlled demonstration when:
 
 ## 23. Roadmap Summary
 
-### NOW — Foundation and safe MVP
+### NOW: Foundation and safe MVP
 
 - Validate the problem and target user
 - Finalize agent boundaries
@@ -436,14 +436,14 @@ The prototype is ready for a controlled demonstration when:
 - Build the activity-restriction prototype
 - Create the evaluation dataset
 
-### NEXT — Build and validate
+### NEXT: Build and validate
 
 - Conduct safety and failure-mode testing
 - Evaluate comprehension, escalation, and evidence quality
 - Add staff workflow and delivery-reliability features
 - Make a pilot go/no-go recommendation
 
-### LATER — Enhance and scale
+### LATER: Enhance and scale
 
 - Approved multilingual explanations
 - Multiple reading levels

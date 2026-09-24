@@ -1,4 +1,4 @@
-# ProductTrace — First Live Discovery Case
+# ProductTrace: First Live Discovery Case
 
 ## Source
 

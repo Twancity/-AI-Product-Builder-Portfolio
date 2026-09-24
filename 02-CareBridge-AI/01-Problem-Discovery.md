@@ -1,4 +1,4 @@
-# CareBridge AI — Problem Discovery
+# CareBridge AI: Problem Discovery
 
 ## Product Concept
 

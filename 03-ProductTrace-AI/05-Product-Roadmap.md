@@ -1,10 +1,10 @@
-# ProductTrace — Product Roadmap
+# ProductTrace: Product Roadmap
 
 ## Current objective
 
 Complete the ProductTrace V1 evidence-to-decision workflow with explicit human governance, then expand into Market Intelligence.
 
-## Phase 1 — Core evidence-to-decision workflow
+## Phase 1: Core evidence-to-decision workflow
 
 ### Status: Completed
 
@@ -20,7 +20,7 @@ Capabilities:
 - Experiment Builder
 - Decision History
 
-## Phase 2 — AI quality and governance
+## Phase 2: AI quality and governance
 
 ### Status: Completed / V1 checkpoint
 
@@ -49,7 +49,7 @@ Latest measured result:
 - 0 unsupported recommendations
 - 0 critical failures
 
-## Phase 2.5 — Instrumentation readiness
+## Phase 2.5: Instrumentation readiness
 
 ### Status: Completed
 
@@ -84,7 +84,7 @@ Readiness should require:
 - External/manual data sources identified
 - Explicit PM approval
 
-## Phase 3 — Market Intelligence
+## Phase 3: Market Intelligence
 
 ### Status: Next major build after completed V1 portfolio checkpoint
 
@@ -114,7 +114,7 @@ Core principle:
 
 > Every market insight must trace back to a source.
 
-## Phase 4 — Portfolio polish
+## Phase 4: Portfolio polish
 
 Planned:
 - Final ProductTrace case study
@@ -141,7 +141,7 @@ Not required for the current portfolio MVP:
 - Production-scale data architecture
 
 
-## Future Upgrade — Discovery Criteria
+## Future Upgrade: Discovery Criteria
 
 ### Status: Deferred / future enhancement
 
@@ -175,7 +175,7 @@ This feature is intentionally deferred until after Market Intelligence so the cu
 
 ## Portfolio Build Status
 
-**Development frozen — September 22, 2026**
+**Development frozen: September 22, 2026**
 
 ProductTrace is complete as the final major portfolio build. Future activity should focus on:
 - real user-led research

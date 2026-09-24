@@ -1,4 +1,4 @@
-# ProductTrace — Final Build Retrospective
+# ProductTrace: Final Build Retrospective
 
 ## Why ProductTrace was built
 
@@ -14,7 +14,7 @@ ProductTrace was built to demonstrate that workflow.
 
 ## Build evolution
 
-### Stage 1 — Initial prototype
+### Stage 1: Initial prototype
 
 The first implementation established the core product shell.
 
@@ -22,7 +22,7 @@ Early audit work revealed that important AI behavior was mocked rather than genu
 
 That changed the direction of the project.
 
-### Stage 2 — Live AI and provenance
+### Stage 2: Live AI and provenance
 
 ProductTrace moved to real AI synthesis.
 
@@ -34,7 +34,7 @@ The product added:
 - PM rationale
 - audit history
 
-### Stage 3 — Real AI evaluation
+### Stage 3: Real AI evaluation
 
 The first real evaluation run scored:
 
@@ -65,7 +65,7 @@ The second run achieved:
 - Unsupported recommendation rate: 0%
 - Critical failures: 0
 
-### Stage 4 — Instrumentation governance
+### Stage 4: Instrumentation governance
 
 The experiment received a structured instrumentation plan with:
 - 9 events
@@ -80,7 +80,7 @@ Synthetic validation passed:
 
 The result remained explicitly labeled synthetic and not production telemetry.
 
-### Stage 5 — Launch governance
+### Stage 5: Launch governance
 
 ProductTrace required independent launch criteria covering:
 - customer evidence
@@ -103,7 +103,7 @@ V1 portfolio launch decision:
 
 This remained a portfolio-prototype approval, not a production launch claim.
 
-### Stage 6 — Market Intelligence
+### Stage 6: Market Intelligence
 
 ProductTrace expanded beyond customer evidence.
 
@@ -130,7 +130,7 @@ After PM decisions, ProductTrace generated one grounded Market Opportunity with:
 
 The PM modified the opportunity rather than accepting the AI proposal as written.
 
-### Stage 7 — Discovery Criteria
+### Stage 7: Discovery Criteria
 
 The Market Opportunity revealed a product gap:
 

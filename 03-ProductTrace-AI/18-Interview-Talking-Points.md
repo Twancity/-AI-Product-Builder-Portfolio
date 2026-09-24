@@ -1,4 +1,4 @@
-# ProductTrace — Interview Talking Points
+# ProductTrace: Interview Talking Points
 
 ## 30-second description
 

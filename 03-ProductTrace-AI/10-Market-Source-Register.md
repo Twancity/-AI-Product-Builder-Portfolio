@@ -1,4 +1,4 @@
-# ProductTrace — Market Source Register
+# ProductTrace: Market Source Register
 
 Captured September 22, 2026.
 

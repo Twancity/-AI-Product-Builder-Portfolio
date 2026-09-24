@@ -1,6 +1,6 @@
 # CareBridge roadmap
 
-## Now — implemented MVP
+## Now: implemented MVP
 
 - Synthetic exact-source retrieval and missing-data handling
 - Narrow rule-based Q&A with evidence
@@ -9,14 +9,14 @@
 - Optional teach-back with three-fact assessment, fixed safety rules, Gemini meaning classification only, one retry, fixed feedback, explicit handoff, reload recovery, and no raw-response retention
 - Synthetic and bounded live evaluation documented separately
 
-## Next — evaluation work, not required for this MVP
+## Next: evaluation work, not required for this MVP
 
 - Expand adversarial language coverage without weakening deterministic rules
 - Add screen-reader and physical assistive-technology evaluation
 - Evaluate older browsers and additional responsive devices
 - Define formal product metrics and study design for fictional usability testing
 
-## Later — production prerequisites
+## Later: production prerequisites
 
 - Authentication and authorization
 - Real reviewer identity and accountable workflow ownership

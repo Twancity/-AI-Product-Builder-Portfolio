@@ -1,4 +1,4 @@
-# ProductTrace — Instrumentation Validation Report
+# ProductTrace: Instrumentation Validation Report
 
 ## Validation purpose
 

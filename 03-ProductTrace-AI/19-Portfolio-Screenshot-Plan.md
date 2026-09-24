@@ -1,4 +1,4 @@
-# ProductTrace — Portfolio Screenshot Plan
+# ProductTrace: Portfolio Screenshot Plan
 
 Capture these screenshots from the live ProductTrace app after development freeze.
 
