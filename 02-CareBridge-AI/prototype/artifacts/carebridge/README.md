@@ -1,5 +1,7 @@
 # CareBridge
 
+**[Open the public live demo](https://harsh-strange-discussions.replit.app)** — Fictional data only; not for clinical use.
+
 CareBridge is a synthetic patient-discharge portfolio prototype. It demonstrates exact-source retrieval, bounded rule-based Q&A, a tightly grounded Gemini explanation path, simulated clarification handoff/status, and optional teach-back for one fictional walker instruction.
 
 ## Safety boundary
