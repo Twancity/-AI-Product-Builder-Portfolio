@@ -8,6 +8,8 @@ ProductTrace is an AI-assisted evidence-to-decision system for Product Managers.
 
 **Portfolio status:** **Development frozen: final capstone build**
 
+**[Open the public live demo](https://product-trace.replit.app)** — Portfolio prototype; explore the application while reviewing its case study and evidence below.
+
 ---
 
 ## Project at a glance
