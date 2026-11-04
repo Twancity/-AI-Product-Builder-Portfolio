@@ -15,7 +15,7 @@ Open these links to try the portfolio applications in your browser; no GitHub or
 | **ProductTrace AI** | [Launch live demo](https://product-trace.replit.app) | [Case study and architecture](03-ProductTrace-AI/) |
 | **StudySteps** | [Launch live demo](https://blind-caring-cpu.replit.app) | [Source and testing](https://github.com/Twancity/studysteps) |
 | **Stash** | [Launch live demo](https://stash-home-inventory.lovable.app) | [Source and testing](https://github.com/Twancity/item-stash) |
-| **CareBridge AI** | Deployment verification in progress | [Prototype source and safeguards](02-CareBridge-AI/) |
+| **CareBridge AI** | [Launch live demo](https://harsh-strange-discussions.replit.app) | [Prototype source and safeguards](02-CareBridge-AI/) |
 
 **Demo notes:** CareBridge uses fictional patient data only and is not for clinical use. These are portfolio prototypes; features and third-party AI availability may vary.
 
@@ -34,7 +34,7 @@ Open these links to try the portfolio applications in your browser; no GitHub or
 | **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone: development frozen** ([Live demo](https://product-trace.replit.app)) | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product: V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
 | **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product: V1 frozen portfolio baseline** ([Live demo](https://blind-caring-cpu.replit.app)) | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
-| **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype: verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
+| **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype: public demo, not for clinical use** ([Live demo](https://harsh-strange-discussions.replit.app)) | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
 ## 1. Stash: Working Product
@@ -89,7 +89,9 @@ A key product lesson from V1 was that **technically valid AI output is not the s
 
 ## 3. CareBridge AI: Responsible AI Product Case Study and Prototype
 
-CareBridge AI began as a concept-stage Patient Discharge Guidance Agent and now includes a working, unpublished portfolio prototype. It helps visitors explore fictional discharge instructions while keeping clinical judgment, real messaging, and real patient data outside the prototype.
+**[Open the public live demo](https://harsh-strange-discussions.replit.app)** — Fictional data only; not for clinical use.
+
+CareBridge AI began as a concept-stage Patient Discharge Guidance Agent and now includes a working, publicly demonstrated portfolio prototype (fictional data only). It helps visitors explore fictional discharge instructions while keeping clinical judgment, real messaging, and real patient data outside the prototype.
 
 ### Product artifacts
 
