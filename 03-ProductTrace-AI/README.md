@@ -6,7 +6,7 @@ ProductTrace is an AI-assisted evidence-to-decision system for Product Managers.
 
 ![ProductTrace architecture](assets/00-producttrace-architecture.jpg)
 
-**Portfolio status:** **Development frozen: final capstone build**
+> **Public demo privacy notice:** ProductTrace is a portfolio prototype. Use only fictional/sample evidence and research. Do not submit personal information, confidential client material, or sensitive business records. The demo may process entries through third-party AI services and may retain records in application storage; privacy controls are being improved and verified.\n\n**Portfolio status:** **Development frozen: final capstone build**
 
 **[Open the public live demo](https://product-trace.replit.app)** — Portfolio prototype; explore the application while reviewing its case study and evidence below.
 
