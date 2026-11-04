@@ -6,6 +6,19 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 **Live portfolio:** https://zebra-zq3b9s.my.canva.site/antwan-gadsden
 
+## Open the Apps: Public Live Demos
+
+Open these links to try the portfolio applications in your browser; no GitHub or Replit account is required for the published demos.
+
+| Project | Interactive application | Project evidence |
+| --- | --- | --- |
+| **ProductTrace AI** | [Launch live demo](https://product-trace.replit.app) | [Case study and architecture](03-ProductTrace-AI/) |
+| **StudySteps** | [Launch live demo](https://blind-caring-cpu.replit.app) | [Source and testing](https://github.com/Twancity/studysteps) |
+| **Stash** | [Launch live demo](https://stash-home-inventory.lovable.app) | [Source and testing](https://github.com/Twancity/item-stash) |
+| **CareBridge AI** | Deployment verification in progress | [Prototype source and safeguards](02-CareBridge-AI/) |
+
+**Demo notes:** CareBridge uses fictional patient data only and is not for clinical use. These are portfolio prototypes; features and third-party AI availability may vary.
+
 ## Start Here: Featured Capstone
 
 **[ProductTrace AI](03-ProductTrace-AI/)** is the strongest end-to-end case study in this portfolio. It demonstrates evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment and launch governance, and explicit human decision authority.
@@ -18,9 +31,9 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
-| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone: development frozen** | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
+| **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone: development frozen** ([Live demo](https://product-trace.replit.app)) | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product: V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
-| **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product: V1 frozen portfolio baseline** | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
+| **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product: V1 frozen portfolio baseline** ([Live demo](https://blind-caring-cpu.replit.app)) | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
 | **[CareBridge AI](02-CareBridge-AI/)** | **Working fictional-data prototype: verified, unpublished** | Responsible AI boundaries, exact-source retrieval, bounded AI evaluation, simulated human escalation, teach-back, product requirements, and governance thinking |
 | **[AI Foundations](01-AI-Foundations/01-AI-Fluency.md)** | **Completed learning artifact** | Practical AI fluency and product-management application |
 
