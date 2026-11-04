@@ -6,6 +6,12 @@ This portfolio is designed to show how I move from a user problem to a defined M
 
 **Live portfolio:** https://zebra-zq3b9s.my.canva.site/antwan-gadsden
 
+## Demo Privacy and Responsible Use
+
+**These are public portfolio prototypes, not production services.** Please explore using invented/sample information only. **Do not enter real patient or student records, personal identifiers, passwords, confidential client data, or sensitive documents.** CareBridge uses fictional clinical scenarios and is not intended for medical advice or clinical use.
+
+The portfolio owner does not intend to sell visitor information or collect marketing leads. However, these demos do not promise zero technical data processing: hosting platforms may process traffic/log information, individual apps may retain demo content in browser storage or server-side processing, and optional AI-powered actions can send user-submitted prompts or images to third-party AI services. Privacy notices and technical safeguards are being reviewed and refined; do not submit information you would not want processed by a demo service.
+
 ## Open the Apps: Public Live Demos
 
 Open these links to try the portfolio applications in your browser; no GitHub or Replit account is required for the published demos.
