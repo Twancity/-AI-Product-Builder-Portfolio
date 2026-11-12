@@ -25,6 +25,16 @@ Open these links to try the portfolio applications in your browser; no GitHub or
 
 **Demo notes:** CareBridge uses fictional patient data only and is not for clinical use. These are portfolio prototypes; features and third-party AI availability may vary.
 
+## Current Active Build
+
+**[ParcelScope](04-ParcelScope-AI/)** is the project I am actively building and validating now. It is a property-research and tax-auction preparation prototype combining Charleston County GIS lookup, spreadsheet import, browser-local OCR, mapping, research notes, scenario calculations, and workflow discovery with real-estate professionals.
+
+- **[Project Overview](04-ParcelScope-AI/README.md)**
+- **[Technical Architecture](04-ParcelScope-AI/TECHNICAL_ARCHITECTURE.md)**
+- **[Discovery & Roadmap](04-ParcelScope-AI/DISCOVERY_AND_ROADMAP.md)**
+
+> ParcelScope is an active prototype, not a public production service. The current application code is still maintained in Replit and is not yet mirrored into this GitHub repository. The GitHub artifacts document the verified implementation, technical decisions, limitations, and current discovery work.
+
 ## Start Here: Featured Capstone
 
 **[ProductTrace AI](03-ProductTrace-AI/)** is the strongest end-to-end case study in this portfolio. It demonstrates evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment and launch governance, and explicit human decision authority.
@@ -37,6 +47,7 @@ Open these links to try the portfolio applications in your browser; no GitHub or
 
 | Project | Stage | What it demonstrates |
 | --- | --- | --- |
+| **[ParcelScope](04-ParcelScope-AI/)** | **Current active build: prototype + discovery in progress** | GIS/API integration, browser-local file parsing and OCR, deterministic validation, failure handling, local-first architecture, product discovery, and production-readiness tradeoffs |
 | **[ProductTrace AI](03-ProductTrace-AI/)** | **Final capstone: development frozen** ([Live demo](https://product-trace.replit.app)) | Evidence traceability, live AI evaluation, Market Intelligence, structured Discovery Criteria, experiment/launch governance, immutable decision history, and human-in-the-loop AI product management |
 | **[Stash](https://github.com/Twancity/item-stash)** | **Working product: V1, V1.1, and V1.2 shipped** ([Live demo](https://stash-home-inventory.lovable.app)) | Problem framing, MVP scoping, PRD development, voice-enabled feature iteration, acceptance testing, product tradeoffs, and roadmap sequencing |
 | **[StudySteps](https://github.com/Twancity/studysteps)** | **Working multimodal AI product: V1 frozen portfolio baseline** ([Live demo](https://blind-caring-cpu.replit.app)) | AI product design, multimodal input, human-in-the-loop review, teach-before-answer guardrails, accessibility, product iteration, acceptance testing, and submission tracking |
@@ -163,4 +174,4 @@ The objective is not to showcase code volume. It is to demonstrate **product rea
 
 ## Current Focus
 
-ProductTrace is now **development frozen** as the final major capstone build. Current learning is shifting toward the **Anthropic course**, personally testing the existing portfolio products, and building smaller Lovable experiments that apply new AI concepts without turning every lesson into another large platform.
+**ParcelScope is the current active build.** ProductTrace and StudySteps remain intentionally frozen portfolio baselines, Stash remains a shipped working product, and CareBridge remains a working fictional-data prototype. Current work is focused on validating ParcelScope's property-research and auction workflow through discovery, prototype testing, and evidence-driven iteration before expanding scope.
